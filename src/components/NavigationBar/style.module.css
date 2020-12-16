@@ -1,0 +1,27 @@
+.navigationBar {
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--secondary-color);
+}
+
+.navigationBar li {
+  padding: 30px 40px; /* prosirila sam razmak medu naslovnicom događajima i to povecanjem ovog drugog broja, ali mislim da to nije ispravno*/
+  list-style: none;
+  width: fit-content;
+  font-size: 15px;
+  font-family: sans-serif; /*triba nac neki font ta ovaj sam jedini cula*/
+  letter-spacing: 2px; /* ovo isto vjv nije dobro ovako rucno postavljat*/
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #555;
+}
+.navigationBar li:hover {
+  border-bottom: 2px solid darkgray;
+  cursor: pointer;
+}
+
+.navigationBar .active,
+.navigationBar .active:hover {
+  border-bottom: 2px solid black;
+}

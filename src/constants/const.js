@@ -1,0 +1,1 @@
+ export const navTabs = ['Naslovnica', 'Događaji', 'Doniraj', 'Kontakt','Naše priče']
