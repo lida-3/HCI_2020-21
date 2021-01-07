@@ -2,11 +2,11 @@ import React from "react"
 import NavigationHeader from '../components/NavigationHeader'
 import Footer from '../components/Footer'
 
-const IndexPage = () => (
+const DonirajPage = () => (
   <main>
-    <NavigationHeader/>
+    <NavigationHeader activeTab = "Doniraj" />
     <Footer />
   </main>
 )
 
-export default IndexPage
+export default DonirajPage
