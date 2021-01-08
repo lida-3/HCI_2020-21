@@ -6,7 +6,7 @@ import Homepage from "../components/Homepage"
 const NaslovnicaPage = () => (
   <main>
     <NavigationHeader activeTab = "Naslovnica" />
-    <Homepage />
+    <Homepage /> 
     <Footer />
   </main>
 )

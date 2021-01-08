@@ -1,29 +1,23 @@
 .introdiv{
     background-color: #7180AC;
-    color: #ffffff;
-    display: left;
+    color: #EFE5E7;
     text-align: center;
     border-radius: 7px;
     padding: 20px;
-    margin: auto;
     width: 30%;
-    position: fixed;
-    left: 10%;
-    top: 160px;  
+    margin-top: 50px;
+    margin-left: 10%;
+    height: 50%;
+    
     
 }
 .carouseldiv{
-    height: 100%;
-    width: 70%;
-    position: fixed;
+    width: 60%;
     overflow: hidden;
-    right: 10%;
-    display: block;
-    position: center;
+    margin-right: 10%;    
     background-color: #7180AC;
     height: 400px; 
     width: 700px;
-
 }
 
 
@@ -138,3 +132,64 @@
 }
 
 /*komentari su postavke za prikazivanje i slika i teksta*/
+
+.boxone{
+    background-color: #EFE5E7;
+    display: flex;
+    justify-content: space-evenly;
+}
+.boxtwo{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    background-color: rgba(239, 229, 231, 0.3);
+    
+}
+.icon{
+    width: 300px;
+    height: 250px;
+}
+.imgdiv{
+    justify-content: space-evenly;
+    margin: 70px;
+}
+
+.button2{
+    display: block;
+    margin: 10px;
+    border-color: #2E3687;
+    padding: 10px;
+    border-radius: 10px;
+    background:none;
+    color:#2E3687;
+
+}
+
+.boxthree{
+    display: flex;
+    background-color: #E4E8F4;
+    justify-content: space-evenly;
+}
+
+.aboutus{
+    text-align: justify;
+    padding: 30px;
+    margin: 30px;
+    line-height: 2rem;
+    color: #2E3687;
+    width: 500px;
+
+}
+.usimg{
+    display: block;
+    height: 300px;
+    width: 500px;
+    margin: 30px;
+    margin-top: 70px;
+    
+}
+.onama{
+    text-align: left;
+    color: #CC9EA5;
+    margin-bottom: 20px;
+}

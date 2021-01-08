@@ -59,6 +59,46 @@ const Homepage =() =>(
 
 
         </div>
+        <div className={styles.boxtwo}>
+            <div className={styles.imgdiv}>
+            <img
+                className={styles.icon}
+                src={require('../../images/events.png')} 
+                alt="dogadaji"
+                />
+                <button className={styles.button2}>Pregled svih humanitarnih dogašaja</button>
+            </div>
+            <div className={styles.imgdiv}>
+            <img
+                className={styles.icon}
+                src={require('../../images/donate.png')} 
+                alt="doniraj"
+                />
+                <button className={styles.button2}>Pronađi udruge koje želiš podržati i doniraj</button>
+            </div>
+            <div className={styles.imgdiv}>
+            <img
+                className={styles.icon}
+                src={require('../../images/info.png')} 
+                alt="kontakt"
+                />
+                <button className={styles.button2}>Kontaktiraj nas i postani volonter/ka</button>
+            </div>
+        </div>
+        <div className={styles.boxthree}>
+            <div className={styles.aboutus}>
+                <h2 className={styles.onama}>O NAMA</h2>
+                <p>Pozdrav! Ova stranica nastala je s idejom kako pomoći ljudima koji žele pomoći drugima. Ako si u potrazi za humanitarnim događajima u kojim želiš sudjelovati ili udrugama kojima želiš pomoći (novčanim donacijama ili volontiranjem), ovo je mjesto za tebe. Također, možeš pročitati priče i iskustva volontera s prethodnih događaja. Nadamo se da ćeš na našoj stranici pronaći sadržaj koji će i tebe potaknuti
+da učiniš neko dobro djelo. Uživaj u boravku na stranici!</p>
+            </div>
+            <div>
+                <img
+                className={styles.usimg}
+                src={require('../../images/team.png')} 
+                alt="dogadaji"
+                />
+            </div>
+        </div>
     </div>
 );
 
