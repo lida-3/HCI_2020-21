@@ -23,7 +23,7 @@ const Homepage =() =>(
             </div>
             <div className={styles.carouseldiv}>   
             <Carousel>
-                <Carousel.Item interval={1200}>
+                <Carousel.Item interval={2000}>
                 <img className={styles.img} src="https://www.dinamikom.eu/images/blog/700-800/736/CL_Down-sindrom_naslovna.jpg"
         alt="downsindrom"
         />
@@ -32,7 +32,7 @@ const Homepage =() =>(
                 <p>21. ožujak 2021.</p>
             </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item interval={1200}>
+            <Carousel.Item interval={2000}>
                 <img
                 className={styles.img}
                     src="https://www.globalnovine.eu/wp-content/uploads/2018/10/Webp.net-resizeimage-4.jpg"
@@ -43,7 +43,7 @@ const Homepage =() =>(
                 <p>proljeće, 2021.</p>
             </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item interval={1200}>
+            <Carousel.Item interval={2000}>
                 <img
                 className={styles.img}
                 src="https://m.vecernji.hr/media/img/31/3f/a7ac5cebf74d98025f8c.jpeg"
@@ -89,7 +89,7 @@ const Homepage =() =>(
                 />
                 <button className={buttonStyles.tertiary}>KONTAKTIRAJ NAS I POSTANI VOLONTER/KA</button></a>
             </div>
-        </div>
+            </div>
         <div className={styles.boxthree}>
             <div className={styles.aboutus}>
                 <h2 className={styles.onama}>O NAMA</h2>

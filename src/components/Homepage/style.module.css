@@ -1,3 +1,9 @@
+/*prvi dio*/
+.boxone {
+  background-color: #efe5e7;
+  display: flex;
+  justify-content: space-evenly;
+}
 .introdiv {
   background-color: #7180ac;
   color: #efe5e7;
@@ -32,6 +38,56 @@
   background-color: rgba(255, 255, 255, 0.4);
   margin-bottom: 5px;
 }
+
+/*drugi dio*/
+.boxtwo {
+  display: flex;
+  background-color: rgba(239, 229, 231, 0.3);
+}
+.icon {
+  display: block;
+  position: relative;
+  left: 1%;
+  width: 370px;
+  height: 250px;
+}
+
+.imgdiv {
+  justify-content: space-evenly;
+  margin: 70px;
+}
+
+/*treci dio*/
+.boxthree {
+  display: flex;
+  background-color: #e4e8f4;
+  justify-content: space-evenly;
+}
+
+.aboutus {
+  text-align: justify;
+  padding: 30px;
+  margin: 30px;
+  line-height: 2rem;
+  color: #2e3687;
+  width: 500px;
+}
+.usimg {
+  display: block;
+  height: 300px;
+  width: 500px;
+  margin: 30px;
+  margin-top: 70px;
+}
+.onama {
+  text-align: left;
+  color: #cc9ea5;
+  margin-bottom: 20px;
+}
+
+
+
+/*responzivnost*/
 
 @media screen and (max-width: 768px) {
   .carouseldiv {
@@ -106,50 +162,58 @@
 
 /*komentari su postavke za prikazivanje i slika i teksta*/
 
-.boxone {
-  background-color: #efe5e7;
-  display: flex;
-  justify-content: space-evenly;
-}
-.boxtwo {
-  display: flex;
-  justify-content: space-evenly;
-  position: relative;
-  background-color: rgba(239, 229, 231, 0.3);
-}
-.icon {
-  width: 300px;
-  height: 250px;
-}
 
-.imgdiv {
-  justify-content: space-evenly;
-  margin: 70px;
-}
+@media screen and (max-width: 768px) {
+  .boxone,
+  .boxtwo,
+  .boxthree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 0;
 
-.boxthree {
-  display: flex;
-  background-color: #e4e8f4;
-  justify-content: space-evenly;
+  }
 }
-
-.aboutus {
-  text-align: justify;
-  padding: 30px;
-  margin: 30px;
-  line-height: 2rem;
-  color: #2e3687;
-  width: 500px;
+@media screen and (max-width: 768px) {
+  .imgdiv {
+    margin-top: 10px;  
+  }
 }
-.usimg {
-  display: block;
-  height: 300px;
-  width: 500px;
-  margin: 30px;
-  margin-top: 70px;
+@media screen and (max-width: 768px) {
+  .icon 
+  {
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+  }
 }
-.onama {
-  text-align: left;
-  color: #cc9ea5;
-  margin-bottom: 20px;
+@media screen and (max-width: 768px) {
+  .usimg  {
+    width: 90%;
+    height: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+  }
+}
+@media screen and (max-width: 768px) {
+  .aboutus {
+    width: 390px;
+    height: 200px;
+    margin: 10px;
+    line-height: 1.1rem;
+    
+    
+  }
+}
+@media screen and (max-width: 768px) {
+  .onama {
+    margin: 5px;
+    margin-top: 0px;
+    
+  }
 }
