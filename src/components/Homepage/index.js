@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 import styles from './style.module.css';
+import buttonStyles from '../Buttons/style.module.css'
 /*
 da bi mogla pokrenut kod vjv ces morat npm install bootstrap i npm install react-bootstrap u terminalu
 ovo className = {styles.nesto} mi je pozivanje css-a jer drugacije nije radio i na nekim mjestima sam u css fileu morala dodat ono 
@@ -16,8 +17,8 @@ const Homepage =() =>(
                     Dobrodošli na stranicu za humanitarne događaje i donacije! <br />
                     Želiš pomići i činiti dobra djela, ali ne znaš gdje i kako početi? Na pravom si mjestu!
                 </p>
-                <button className ={styles.button}>Uključi se</button>
-                <button className ={styles.button}>Saznaj više</button>
+                <button className ={buttonStyles.secondary}>UKLJUČI SE</button>
+                <button className ={buttonStyles.secondary}>SAZNAJ VIŠE</button>
         
             </div>
             <div className={styles.carouseldiv}>   
@@ -61,28 +62,32 @@ const Homepage =() =>(
         </div>
         <div className={styles.boxtwo}>
             <div className={styles.imgdiv}>
+            <a href="/dogadaji">
             <img
                 className={styles.icon}
                 src={require('../../images/events.png')} 
                 alt="dogadaji"
                 />
-                <button className={styles.button2}>Pregled svih humanitarnih dogašaja</button>
+                <button className={buttonStyles.tertiary}
+                >PREGLED SVIH HUMANITARHNIH DOGAĐAJA</button></a>
             </div>
             <div className={styles.imgdiv}>
+             <a href="/doniraj">
             <img
                 className={styles.icon}
                 src={require('../../images/donate.png')} 
                 alt="doniraj"
                 />
-                <button className={styles.button2}>Pronađi udruge koje želiš podržati i doniraj</button>
+                <button className={buttonStyles.tertiary}>PRONAĐI UDRUGE KOJE ŽELIŠ PODRŽATI I DONIRAJ</button></a>
             </div>
             <div className={styles.imgdiv}>
+             <a href="/kontakt">
             <img
                 className={styles.icon}
                 src={require('../../images/info.png')} 
                 alt="kontakt"
                 />
-                <button className={styles.button2}>Kontaktiraj nas i postani volonter/ka</button>
+                <button className={buttonStyles.tertiary}>KONTAKTIRAJ NAS I POSTANI VOLONTER/KA</button></a>
             </div>
         </div>
         <div className={styles.boxthree}>

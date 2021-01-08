@@ -14,14 +14,19 @@
   letter-spacing: 2px; /* ovo isto vjv nije dobro ovako rucno postavljat*/
   line-height: 22px;
   text-transform: uppercase;
-  color: #555;
+  color: #7180ac;
 }
 .navigationBar li:hover {
-  border-bottom: 2px solid darkgray;
+  border-bottom: 2px solid #d7def3;
   cursor: pointer;
 }
 
 .navigationBar .active,
 .navigationBar .active:hover {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #7180ac;
+  color: #2e3687;
 }
+
+.razmak {
+  padding: 13.5px 40px;
+} /* bez ovoga prijavi se bude u gornjem desnom kutu*/

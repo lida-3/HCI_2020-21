@@ -1,0 +1,71 @@
+.primary {
+  display: inline-block;
+  margin: 10px;
+  border: none;
+  padding: 7px 20px;
+  border-radius: 30px;
+  background-color: #cc9ea5;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: sans-serif;
+  text-align: center; /*triba nac neki font ta ovaj sam jedini cula*/
+  letter-spacing: 2px;
+}
+
+.primary:hover {
+  background-color: #7180ac;
+}
+
+.secondary {
+  display: inline-block;
+  margin: 10px;
+  border: solid 1px white;
+  padding: 7px 20px;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: sans-serif;
+  text-align: center; /*triba nac neki font ta ovaj sam jedini cula*/
+  letter-spacing: 2px;
+}
+
+.secondary:hover {
+  background-color: #cc9ea5;
+  border: none;
+}
+
+.tertiary {
+  display: inline-block;
+  margin: 10px;
+  border: solid 1px #2e3687;
+  padding: 3px 10px;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #2e3687;
+  font-size: 14px;
+  font-family: sans-serif;
+  text-align: center; /*triba nac neki font ta ovaj sam jedini cula*/
+  letter-spacing: 1px;
+}
+
+.tertiary:hover {
+  background-color: #2e3687;
+  color: white;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .primary,
+  .secondary,
+  .tertiary {
+    /*
+        margin: 0px;
+        margin-right: 3px;
+        padding: 4px; 
+    */
+    margin: 0px 10px;
+    padding: 4px;
+    font-size: 10px;
+  }
+}
