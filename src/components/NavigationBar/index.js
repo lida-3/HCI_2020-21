@@ -2,8 +2,6 @@ import React from 'react'
 import { navTabs } from '../../constants/const'
 import styles from './style.module.css'
 import buttonStyles from '../Buttons/style.module.css'
- 
- 
 import { Link } from 'gatsby'
 
 const NavigationBar = ({ activeTab, useThisStyle }) => (

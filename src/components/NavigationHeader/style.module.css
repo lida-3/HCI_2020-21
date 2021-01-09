@@ -3,3 +3,10 @@
   display: flex;
   justify-content: flex-end; /* ode se minja da sve ide livo, ako zelimo normalno onda ide space between*/
 }
+
+@media screen and (max-width: 768px) {
+  .navigationHeader {
+    height: 20px;
+    display: flex;
+  }
+}

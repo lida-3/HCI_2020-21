@@ -85,8 +85,6 @@
   margin-bottom: 20px;
 }
 
-
-
 /*responzivnost*/
 
 @media screen and (max-width: 768px) {
@@ -162,7 +160,6 @@
 
 /*komentari su postavke za prikazivanje i slika i teksta*/
 
-
 @media screen and (max-width: 768px) {
   .boxone,
   .boxtwo,
@@ -173,47 +170,40 @@
     justify-content: center;
     gap: 5px;
     margin: 0;
-
   }
 }
 @media screen and (max-width: 768px) {
   .imgdiv {
-    margin-top: 10px;  
+    margin-top: 10px;
   }
 }
 @media screen and (max-width: 768px) {
-  .icon 
-  {
+  .icon {
     width: 100%;
     height: auto;
     margin-right: 10px;
     margin-left: 10px;
-    
   }
 }
 @media screen and (max-width: 768px) {
-  .usimg  {
+  .usimg {
     width: 90%;
     height: auto;
     margin-right: 10px;
     margin-left: 10px;
-    
   }
 }
 @media screen and (max-width: 768px) {
   .aboutus {
-    width: 390px;
+    width: 100%;
     height: 200px;
     margin: 10px;
     line-height: 1.1rem;
-    
-    
   }
 }
 @media screen and (max-width: 768px) {
   .onama {
     margin: 5px;
     margin-top: 0px;
-    
   }
 }
