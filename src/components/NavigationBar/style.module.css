@@ -31,6 +31,10 @@
   padding: 13.5px 40px;
 } /* bez ovoga prijavi se bude u gornjem desnom kutu*/
 
+.modalpg{
+  color: #2e3687;
+}
+
 @media screen and (max-width: 768px) {
   .navigationBar {
     height: 20px;

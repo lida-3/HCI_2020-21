@@ -74,7 +74,7 @@ const Homepage =() =>(
             <div className={styles.imgdiv}>
              <a href="/doniraj">
             <img
-                className={styles.icon}
+                className={styles.icon2}
                 src={require('../../images/donate.png')} 
                 alt="doniraj"
                 />
@@ -93,7 +93,7 @@ const Homepage =() =>(
         <div className={styles.boxthree}>
             <div className={styles.aboutus}>
                 <h2 className={styles.onama}>O NAMA</h2>
-                <p>Pozdrav! Ova stranica nastala je s idejom kako pomoći ljudima koji žele pomoći drugima. Ako si u potrazi za humanitarnim događajima u kojim želiš sudjelovati ili udrugama kojima želiš pomoći (novčanim donacijama ili volontiranjem), ovo je mjesto za tebe. Također, možeš pročitati priče i iskustva volontera s prethodnih događaja. Nadamo se da ćeš na našoj stranici pronaći sadržaj koji će i tebe potaknuti
+                <p className={styles.onamatext}>Pozdrav! Ova stranica nastala je s idejom kako pomoći ljudima koji žele pomoći drugima. Ako si u potrazi za humanitarnim događajima u kojim želiš sudjelovati ili udrugama kojima želiš pomoći (novčanim donacijama ili volontiranjem), ovo je mjesto za tebe. Također, možeš pročitati priče i iskustva volontera s prethodnih događaja. Nadamo se da ćeš na našoj stranici pronaći sadržaj koji će i tebe potaknuti
 da učiniš neko dobro djelo. Uživaj u boravku na stranici!</p>
             </div>
             <div>

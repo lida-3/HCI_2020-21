@@ -57,6 +57,23 @@
   border: none;
 }
 
+
+.quaternary {
+  display: flex;
+  margin: auto;
+  border: none;
+  padding: 7px;
+  padding-left: 17%;
+  width: 70%;
+  border-radius: 30px;
+  background-color: #cc9ea5;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: center; 
+  letter-spacing: 2px;
+}
+
 @media screen and (max-width: 768px) {
   .primary,
   .secondary,
@@ -73,15 +90,15 @@
     
   }
 }
+
 @media screen and (max-width: 768px) {
   .tertiary {
-    /*
-        margin: 0px;
-        margin-right: 3px;
-        padding: 4px; 
-    */
-    display: block;
+    width: 280px;
+    height: 40px;
     margin-left: 20px;
+    padding: 4px;
+    font-size: 10px;
   }
 }
+
 
