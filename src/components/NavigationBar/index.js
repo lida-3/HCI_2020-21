@@ -17,11 +17,13 @@ import {
 import { Link } from 'gatsby'
 import Login from '../LoginForm'
 import {myLocalStorage} from '../../helper'
+import {navigate} from 'gatsby'
 
 const loggedIn = () => !!myLocalStorage.getItem('loggedIn')
 const NavigationBar = ({ activeTab, useThisStyle, props }) => {
     const [modal, setModal] = useState(false)
-    const toggle = () => setModal(!modal)
+    const [isLoggedIn, setLoggedIn] = useState(loggedIn())
+    const toggle = () => !isLoggedIn ? setModal(!modal) : (myLocalStorage.removeItem("loggedIn"), navigate('/'))
     return(
     <nav className={styles[useThisStyle || 'navigationBar']}>
         {navTabs.map(({tab, to}) => (
@@ -30,7 +32,7 @@ const NavigationBar = ({ activeTab, useThisStyle, props }) => {
           </Link>)
         )}
         <div className = {styles.razmak}>
-            <button onClick={toggle} className ={buttonStyles.primary}> {loggedIn() ? 'Odjava' : 'Prijava'}</button>
+            <button onClick={toggle} className ={buttonStyles.primary}> {isLoggedIn ? 'Odjava' : 'Prijava'}</button>
         </div>
         <Modal size='lg' isOpen={modal} toggle={toggle}>
                   <ModalHeader toggle={toggle}>

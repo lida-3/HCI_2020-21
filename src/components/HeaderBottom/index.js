@@ -9,11 +9,28 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import styles from './style.module.css'
 import dots from "../../images/iconDots.png"
 import login from "../../images/iconUser.png"
+import buttonStyles from '../Buttons/style.module.css'
+import LoginForm from '../LoginForm'
+import Register from '../Register'
+import {
+    Button,
+    Modal,
+    ModalHeader,
+    ModalBody,
+    ModalFooter,
+  
+  } from "reactstrap"
+import Login from '../LoginForm'
+import {myLocalStorage} from '../../helper'
+import {navigate} from 'gatsby'
 
+const loggedIn = () => !!myLocalStorage.getItem('loggedIn')
 const Header = () => {
   const [dropdownOpen, setOpen] = useState(false)
   const [modal, setModal] = useState(false)
-
+ 
+    const [isLoggedIn, setLoggedIn] = useState(loggedIn())
+    const toggle2 = () => !isLoggedIn ? setModal(!modal) : (myLocalStorage.removeItem("loggedIn"), navigate('/'))
   const toggle = () => setOpen(!dropdownOpen)
   const toggleAll = () => {
     setOpen(!dropdownOpen)
@@ -82,14 +99,23 @@ const Header = () => {
                   alt="login"
                 ></img>{" "}
               </a>
-              <a
-                href="#"
-                onClick={toggleAll}
-                className={styles.navbarName}
-                activeclassname={styles.navbarName__active}
-              >
-                PRIJAVI SE
-              </a>
+              <div className={styles.navbarName}>
+            <button onClick={toggle2} className ={buttonStyles.primaryM}> {isLoggedIn ? 'Odjava' : 'Prijava'}</button>
+        </div>
+              <Modal size='sm' isOpen={modal} toggle={toggle2}>
+                  <ModalHeader toggle={toggle2}>
+                    <p className={styles.modalpg}>PRIJAVA I REGISTRACIJA</p>
+                  </ModalHeader>
+                  <ModalBody>
+                    <p><LoginForm /></p>
+                    <p><Register /></p>
+                    </ModalBody>
+                    <ModalFooter>
+                        <Button color="secondary" onClick={toggle2} >
+                            Odustani
+                        </Button>
+                  </ModalFooter>
+                </Modal>      
             </div>
             
           </div>
