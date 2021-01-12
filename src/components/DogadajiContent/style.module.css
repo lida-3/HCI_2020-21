@@ -1,0 +1,39 @@
+body {
+  font-family: Lato;
+  color: black;
+}
+a {
+  display: block;
+  padding: 5px;
+}
+.k-state-active {
+  background: blue;
+  color: white;
+}
+.MuiToggleButton-root {
+  margin: 10px;
+}
+li {
+  padding: 10px;
+}
+
+.button {
+  margin: 10px !important;
+  border-color: #7180ac !important;
+  color: #7180ac !important;
+  border-radius: 30px !important;
+  padding: 2px 15px !important;
+  font-size: 12px !important;
+  font-family: sans-serif !important;
+  letter-spacing: 1px !important;
+}
+
+/*.button:focus {
+  background-color: aqua !important;
+}*/
+
+.textfield {
+  display: flex;
+  justify-content: flex-start;
+  margin: 15px 20px;
+}
