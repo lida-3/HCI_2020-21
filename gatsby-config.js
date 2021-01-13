@@ -34,6 +34,7 @@ module.exports = {
         path: `./src/data/`,
       },
     },
+    
 
   ],
 }

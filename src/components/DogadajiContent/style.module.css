@@ -1,6 +1,5 @@
 body {
   font-family: Lato;
-  color: black;
 }
 a {
   display: block;
@@ -36,4 +35,67 @@ li {
   display: flex;
   justify-content: flex-start;
   margin: 15px 20px;
+}
+
+.container {
+  display: inline-block;
+  margin: 50px 70px 0px 70px;
+  width: 600px;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.cardMedia {
+  border: 1px solid #7180ac;
+  height: 125px;
+  margin-bottom: 25px;
+  transition: all 300ms ease-out;
+  width: 100%;
+}
+
+.cardMedia:hover {
+  box-shadow: 0 5px 14px #7180ac;
+}
+
+.cardMediaBody {
+  background-color: transparent;
+  float: left;
+  height: 100%;
+  padding: 12px 15px;
+  position: relative;
+  width: 65%;
+}
+
+.cardMediaBodyHeading {
+  display: block;
+  letter-spacing: 1px;
+  color: #2e3687;
+  margin-top: 10px;
+}
+
+.cardMediaBodyTop {
+  display: block;
+}
+
+.subtle {
+  color: #7180ac !important;
+  font-size: 12px;
+}
+
+.cardMediaBodyBottom {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  opacity: 1;
+  padding: 0 15px;
+  transition: all 300ms ease-out;
+  width: 100%;
+}
+
+.cardMediaObjectContainer {
+  background: none;
+  float: left;
+  height: 100%;
+  width: 35%;
+  position: relative;
 }

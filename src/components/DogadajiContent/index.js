@@ -2,10 +2,14 @@ import React, { memo, useCallback, useState, useEffect } from 'react'
 import TextField from "@material-ui/core/TextField"
 import eventsList from "../../data/dogadaji.json"
 import ButtonToggle from '@material-ui/lab/ToggleButton'
+import Img from "gatsby-image"
+import DogadajImage from "../DogadajImage"
 import './style.module.css'
 import styles from './style.module.css'
 
+
 const DogadajiContent = memo(({ fetchData }) => {
+  
   const [items, setItems] = React.useState(eventsList);
   const [searchText, setSearchText] = React.useState("");
   const [filter, setFilter] = React.useState(new Set());
@@ -31,6 +35,7 @@ const DogadajiContent = memo(({ fetchData }) => {
     }
   };
 
+
   let filteredItems = items.filter(item => {
     if (filter.size > 0 && !filter.has(item.type))
       return false;
@@ -39,7 +44,27 @@ const DogadajiContent = memo(({ fetchData }) => {
       return false;
     
     return true;
-  }).map((item, i) => <li>{item.title} <br/><span>{item.description}</span></li>);
+  }).map((item, i) => <div className={styles.container} >
+    <div className={styles.cardMedia}>
+      <div className={styles.cardMediaObjectContainer}>
+        <DogadajImage
+           className={styles.image}
+           filename={item.image.src}
+        />
+        
+      </div>
+      <div className={styles.cardMediaBody}>
+        <div className={styles.cardMediaBodyTop}>
+        <span className={styles.subtle}>{item.date}</span>
+        <span className={styles.cardMediaBodyHeading}>{item.title}</span>
+        <span className={styles.cardMediaBodyBottom, styles.subtle}>{item.place}</span>
+    </div>
+    </div>
+    </div>
+    </div>
+
+  );
+   
   
   return <>
     <div className={styles.textfield}>
@@ -94,9 +119,7 @@ const DogadajiContent = memo(({ fetchData }) => {
       Radne akcije
     </ButtonToggle>
     <div>
-      <ul>
-         {filteredItems}
-      </ul>
+      {filteredItems}
     </div>
   </>
 })

@@ -107,8 +107,8 @@ const Header = () => {
                     <p className={styles.modalpg}>PRIJAVA I REGISTRACIJA</p>
                   </ModalHeader>
                   <ModalBody>
-                    <p><LoginForm /></p>
-                    <p><Register /></p>
+                    <LoginForm />
+                    <Register />
                     </ModalBody>
                     <ModalFooter>
                         <Button color="secondary" onClick={toggle2} >
