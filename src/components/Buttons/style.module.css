@@ -74,6 +74,57 @@
   letter-spacing: 2px;
 }
 
+.volontiraj{
+  display: inline-block;
+  
+  margin-top: 30px;
+  border: none;
+  padding: 7px 20px;
+  border-radius: 30px;
+  background-color: #cc9ea5;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: center; 
+  letter-spacing: 2px;
+  width: 20%;
+}
+
+.poruka{
+  display: inline-block;
+  border: none;
+  padding: 7px 20px;
+  border-radius: 30px;
+  background-color: #cc9ea5;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: center; 
+  letter-spacing: 2px;
+  width: 30%;
+}
+
+.submit {
+  display: inline-block;
+  border: none;
+  padding: 7px 20px;
+  border-radius: 30px;
+  background-color: #cc9ea5;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: center; 
+  letter-spacing: 2px;
+
+  
+}
+
+.volontiraj:hover,
+.poruka:hover,
+.submit:hover {
+  background-color: #2e3687;
+}
+
 @media screen and (max-width: 768px) {
   .primary,
   .secondary,
@@ -130,3 +181,24 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .volontiraj
+   {
+   font-size: 16px;
+   width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .poruka
+   {
+   font-size: 16px;
+   width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .submit
+   {
+   font-size: 16px;
+  }
+}
