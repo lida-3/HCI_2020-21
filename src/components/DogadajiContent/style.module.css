@@ -1,60 +1,38 @@
-body {
-  font-family: Lato;
+.buttonContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 50px;
+  position: relative;
 }
-a {
-  display: block;
-  padding: 5px;
-}
-.k-state-active {
-  background: blue;
-  color: white;
-}
-.MuiToggleButton-root {
-  margin: 10px;
-}
-li {
-  padding: 10px;
-}
-
-.button {
-  margin: 10px !important;
-  border-color: #7180ac !important;
-  color: #7180ac !important;
-  border-radius: 30px !important;
-  padding: 2px 15px !important;
-  font-size: 12px !important;
-  font-family: sans-serif !important;
-  letter-spacing: 1px !important;
-}
-
-/*.button:focus {
-  background-color: aqua !important;
-}*/
 
 .textfield {
   display: flex;
   justify-content: flex-start;
-  margin: 15px 20px;
+  margin: 20px 50px;
 }
 
 .container {
   display: inline-block;
-  margin: 50px 70px 0px 70px;
+  margin: 50px 70px 0px 50px;
   width: 600px;
+  height: 135px;
   box-sizing: border-box;
   background-color: transparent;
 }
 
 .cardMedia {
-  border: 1px solid #7180ac;
-  height: 125px;
+  border-radius: 2px;
+  /*border: 1px solid #7180ac;*/
+  box-shadow: 0 5px 10px #7180ac;
+  background-color: white;
+  height: 100%;
   margin-bottom: 25px;
-  transition: all 300ms ease-out;
   width: 100%;
 }
 
 .cardMedia:hover {
-  box-shadow: 0 5px 14px #7180ac;
+  box-shadow: 0 7px 14px #7180ac;
+  transform: scale(1.1);
 }
 
 .cardMediaBody {
@@ -63,13 +41,15 @@ li {
   height: 100%;
   padding: 12px 15px;
   position: relative;
-  width: 65%;
+  width: 60%;
 }
 
 .cardMediaBodyHeading {
   display: block;
   letter-spacing: 1px;
   color: #2e3687;
+  font-size: 16;
+  font-weight: 500;
   margin-top: 10px;
 }
 
@@ -78,17 +58,15 @@ li {
 }
 
 .subtle {
-  color: #7180ac !important;
-  font-size: 12px;
+  color: #7180ac;
+  font-size: 14px;
 }
 
 .cardMediaBodyBottom {
   position: absolute;
-  bottom: 10px;
+  bottom: 8px;
   left: 0;
-  opacity: 1;
   padding: 0 15px;
-  transition: all 300ms ease-out;
   width: 100%;
 }
 
@@ -96,6 +74,82 @@ li {
   background: none;
   float: left;
   height: 100%;
-  width: 35%;
+  width: 40%;
   position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  background-color: #efe5e7;
+  margin-top: 0px;
+  min-height: 600px;
+  padding: 120px 0px 60px 40px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: white;
+}
+
+.cardMediaBody:hover .overlay {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .background {
+    padding: 70px 5px 20px 5px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0px 0px 30px 0px;
+    width: 100%;
+    height: 100px;
+  }
+
+  .buttonContainer {
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    grid-template-rows: 30px 30px 30px;
+    row-gap: 0px;
+    margin-left: 0px;
+  }
+
+  .subtle {
+    font-size: 8px;
+  }
+
+  .cardMediaBodyHeading {
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: auto;
+  }
+
+  .overlay {
+    padding: 18px;
+    line-height: 0.8;
+    text-align: justify;
+  }
+
+  .cardMedia:hover {
+    transform: scale(1.007);
+  }
+
+  .textfield {
+    margin: 10px 0px 20px 5px;
+    width: 100px;
+  }
 }

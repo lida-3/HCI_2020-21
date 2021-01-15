@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 import styles from './style.module.css';
 import buttonStyles from '../Buttons/style.module.css'
+import {Link} from "gatsby"
 /*
 da bi mogla pokrenut kod vjv ces morat npm install bootstrap i npm install react-bootstrap u terminalu
 ovo className = {styles.nesto} mi je pozivanje css-a jer drugacije nije radio i na nekim mjestima sam u css fileu morala dodat ono 
@@ -62,32 +63,32 @@ const Homepage =() =>(
         </div>
         <div className={styles.boxtwo}>
             <div className={styles.imgdiv}>
-            <a href="/dogadaji">
+            <Link to ="/dogadaji">
             <img
                 className={styles.icon}
                 src={require('../../images/events.png')} 
                 alt="dogadaji"
                 />
                 <button className={buttonStyles.tertiary}
-                >PREGLED SVIH HUMANITARHNIH DOGAĐAJA</button></a>
+                >PREGLED SVIH HUMANITARHNIH DOGAĐAJA</button></Link>
             </div>
             <div className={styles.imgdiv}>
-             <a href="/doniraj">
+             <Link to ="/doniraj">
             <img
                 className={styles.icon2}
                 src={require('../../images/donate.png')} 
                 alt="doniraj"
                 />
-                <button className={buttonStyles.tertiary}>PRONAĐI UDRUGE KOJE ŽELIŠ PODRŽATI I DONIRAJ</button></a>
+                <button className={buttonStyles.tertiary}>PRONAĐI UDRUGE KOJE ŽELIŠ PODRŽATI I DONIRAJ</button></Link>
             </div>
             <div className={styles.imgdiv}>
-             <a href="/kontakt">
+             <Link to="/kontakt">
             <img
                 className={styles.icon}
                 src={require('../../images/info.png')} 
                 alt="kontakt"
                 />
-                <button className={buttonStyles.tertiary}>KONTAKTIRAJ NAS I POSTANI VOLONTER/KA</button></a>
+                <button className={buttonStyles.tertiary}>KONTAKTIRAJ NAS I POSTANI VOLONTER/KA</button></Link>
             </div>
             </div>
         <div className={styles.boxthree}>

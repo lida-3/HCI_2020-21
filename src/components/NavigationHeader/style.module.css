@@ -3,6 +3,13 @@
   display: flex;
   justify-content: flex-end; /* ode se minja da sve ide livo, ako zelimo normalno onda ide space between*/
 }
+.Section {
+  border-bottom: 1px solid #7180ac;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 1 !important;
+}
 
 @media screen and (max-width: 768px) {
   .navigationHeader {

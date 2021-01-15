@@ -4,7 +4,7 @@ import Navigation from '../Navigation'
 import Logo from '../Logo'
 
 const NavigationHeader = ({ activeTab }) => (
-  <section  >
+  <section  className={styles.Section}>
      <div>
        <Logo/>
      </div>

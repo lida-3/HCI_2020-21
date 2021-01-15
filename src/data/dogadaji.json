@@ -1,10 +1,10 @@
 [
   {
-    "title": "Wings for life World Run",
+    "title": "Utrka Wings for life World Run",
     "type": "Sport",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec mollis enim. Duis urna est, elementum ornare sodales pretium, placerat at magna. In mollis nibh vitae lacus facilisis fringilla. ",
     "image": { "src": "WorldRun.jpg" },
-    "date": "9.svibnja 2021. u 10:00",
+    "date": "Sub, 9.svibnja, 10:00",
     "place": "Splitska riva"
   },
   {
@@ -12,23 +12,31 @@
     "type": "Radna akcija",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec mollis enim. Duis urna est, elementum ornare sodales pretium, placerat at magna. In mollis nibh vitae lacus facilisis fringilla",
     "image": { "src": "boranka.jpg" },
-    "date": "Svake subote u 10:00 - 14:00",
+    "date": "Svake subote, 10:00 - 14:00",
     "place": "Mosor"
   },
   {
-    "title": "Humanitarna virtualna utrka za pomoć stradalima u potresu",
+    "title": "Virtualna utrka za pomoć stradalima u potresu",
     "type": "Sport",
-    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec mollis enim. Duis urna est, elementum ornare sodales pretium, placerat at magna. In mollis nibh vitae lacus facilisis fringilla. ",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec mollis enim. Duis urna est, elementum ornare sodales pretium, placerat at magna.  In mollis nibh vitae lacus facilisis fringilla ",
     "image": { "src": "petrinja.jpg" },
-    "date": "25.siječnja 2021. u 9:00",
-    "place": "Bilodi"
+    "date": "Sub, 25.siječnja, 9:00",
+    "place": "Online"
+  },
+  {
+    "title": "Koncert Ključ života - Petar Grašo, Serverina i ostali",
+    "type":"Koncerti",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec mollis enim. Duis urna est, elementum ornare sodales pretium, placerat at magna. In mollis nibh vitae lacus facilisis fringilla.",
+    "image": { "src": "kljuc.jpg" },
+    "date": "Pet, 7.svibnja, 20:00",
+    "place": "Splitska riva"
   },
   {
     "title": "72 sata bez kompromisa",
     "type": "Radna akcija",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec mollis enim. Duis urna est, elementum ornare sodales pretium, placerat at magna. In mollis nibh vitae lacus facilisis fringilla. ",
     "image": { "src": "72h.png" },
-    "date": "20. - 23.ožujka 2021.",
+    "date": "Pet-Ned, 20. - 23.ožujka, 10:00",
     "place": "Po dogovoru"
   },
   {
@@ -36,7 +44,7 @@
     "type": "Druženja",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec mollis enim. Duis urna est, elementum ornare sodales pretium, placerat at magna. In mollis nibh vitae lacus facilisis fringilla.",
     "image": { "src": "autizam.jpg" },
-    "date": "2.travnja 2021. u 12:00",
+    "date": "Sri, 2.travnja, 12:00",
     "place": "Splitska riva"
   },
   {
@@ -44,7 +52,32 @@
     "type":"Druženja",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec mollis enim. Duis urna est, elementum ornare sodales pretium, placerat at magna. In mollis nibh vitae lacus facilisis fringilla.",
     "image": { "src": "kupanje.jpg" },
-    "date": "15.lipnja 2021. u 16:00",
+    "date": "Ned, 15.lipnja, 16:00",
     "place": "Žnjan"
+  },
+    {
+    "title": "Izložba za štićenike Maestrala",
+    "type":"Kultura",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec mollis enim. Duis urna est, elementum ornare sodales pretium, placerat at magna. In mollis nibh vitae lacus facilisis fringilla.",
+    "image": { "src": "izlozba.jpeg" },
+    "date": "Čet, 1.lipnja, 18:00",
+    "place": "Muzej grada Splita"
+  },
+   {
+    "title": "Predstava Sladoled teatra Gavran",
+    "type":"Kultura",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec mollis enim. Duis urna est, elementum ornare sodales pretium, placerat at magna. In mollis nibh vitae lacus facilisis fringilla.",
+    "image": { "src": "sladoled.png" },
+    "date": "Pet, 22.veljače, 19:00",
+    "place": "Amfiteatar Medicinskog fakulteta"
+  },
+  {
+    "title": "Koncert Gustavi,Šajeta i MedVid za Petrinju",
+    "type":"Koncerti",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec mollis enim. Duis urna est, elementum ornare sodales pretium, placerat at magna. In mollis nibh vitae lacus facilisis fringilla.",
+    "image": { "src": "koncert.png" },
+    "date": "Pet, 15.siječnja, 20:00",
+    "place": "Online, Facebook"
   }
+
 ]

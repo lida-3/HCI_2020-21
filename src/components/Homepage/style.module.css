@@ -2,6 +2,7 @@
 .boxone {
   background-color: #efe5e7;
   display: flex;
+  padding-top: 120px;
   justify-content: space-evenly;
 }
 .introdiv {
@@ -16,7 +17,6 @@
   margin-bottom: 50px;
   margin-right: 30px;
   height: 50%;
-  
 }
 .carouseldiv {
   width: 60%;
@@ -24,7 +24,7 @@
   margin: auto;
   margin-right: 10%;
   background-color: #7180ac;
-  
+
   height: 400px;
   width: 700px;
 }
@@ -90,7 +90,6 @@
   color: #cc9ea5;
   margin-bottom: 20px;
 }
-
 
 /*responzivnost*/
 
@@ -168,6 +167,12 @@
 /*komentari su postavke za prikazivanje i slika i teksta*/
 
 @media screen and (max-width: 768px) {
+  .boxone {
+    padding-top: 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .boxone,
   .boxtwo,
   .boxthree {
@@ -205,7 +210,6 @@
     height: auto;
     margin: auto;
     margin-bottom: 20px;
-    
   }
 }
 @media screen and (max-width: 768px) {

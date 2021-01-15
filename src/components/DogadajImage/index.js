@@ -35,7 +35,7 @@ const DogadajImage = props => (
       return (
         <Img
           alt={props.alt}
-          fluid={image.node.childImageSharp.fluid}
+          fluid={image.node.childrenImageSharp[0].fluid}
           style={{ position: "initial" }}
         />
       )

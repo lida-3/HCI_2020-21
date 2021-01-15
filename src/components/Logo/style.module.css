@@ -4,6 +4,7 @@
   flex-flow: column;
   width: fit-content;
   margin: 18px 75px;
+  opacity: 0.8;
 }
 
 .logoImg {
