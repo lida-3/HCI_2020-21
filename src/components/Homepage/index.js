@@ -4,11 +4,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import styles from './style.module.css';
 import buttonStyles from '../Buttons/style.module.css'
 import {Link} from "gatsby"
-/*
-da bi mogla pokrenut kod vjv ces morat npm install bootstrap i npm install react-bootstrap u terminalu
-ovo className = {styles.nesto} mi je pozivanje css-a jer drugacije nije radio i na nekim mjestima sam u css fileu morala dodat ono 
-!important da bi mi primjenilo stil
-*/
+
 const Homepage =() =>( 
     <div>
         <div className={styles.boxone}>

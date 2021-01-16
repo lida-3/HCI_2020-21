@@ -1,0 +1,75 @@
+.container {
+    background-color: #efe5e7;
+    display: block;
+    align-items: center;
+    padding-top: 130px;
+    padding-bottom: 50px;
+    
+  }
+  .kartica{
+      background-color: #ffffff;
+      display: block;
+      width: 70%;
+      margin: auto;
+      height: auto;
+  }
+  
+  .container header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #2e3687;
+    padding: 20px;
+  
+    
+  }
+  .imagediv{
+      display: block;
+      width: 70%;
+      margin: auto;
+  }
+  
+  .strelice{
+      display: block;
+      width: 70%;
+      margin: auto;
+      height: auto;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+  }
+  .strelicaP{
+      display: flex;
+      float: left;
+      
+  }
+  
+  .strelicaS{
+      display: flex;
+      float: right;
+  }
+    
+  .container article {
+    line-height: 25px;
+    font-size: 20px;
+    width: 100%;
+    text-align: justify;
+    padding: 60px;
+    margin: auto;
+    color: #7180ac;
+
+  }
+
+  @media screen and (max-width: 768px) {
+    .container   {
+      text-align: center;
+    }
+  }
+ 
+  @media screen and (max-width: 768px) {
+    .imagediv   {
+      display: block;
+    }
+  }

@@ -10,9 +10,9 @@ import email from '../../images/email.png'          //jedan nacin ucitavanja sli
                 
         <span><img src={require('../../images/phone.png')} ></img>  +0385911122334</span>
         <span>Pratite nas na društvenim mrežama:
-        <img src={require('../../images/facebook.png')} ></img> 
-        <img src={require('../../images/instagram.png')} ></img> 
-        <img src={require('../../images/twitter.png')} ></img> 
+          <a href ='https://www.facebook.com/' target="_blank"><img src={require('../../images/facebook.png')} ></img></a>
+          <a href='https://www.instagram.com/' target="_blank"><img src={require('../../images/instagram.png')} ></img> </a>
+          <a href='https://twitter.com/' target="_blank"> <img src={require('../../images/twitter.png')} ></img> </a>
         </span>
         
     </footer>

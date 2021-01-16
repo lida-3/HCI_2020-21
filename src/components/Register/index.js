@@ -30,6 +30,10 @@ const Register = () => {
                     <label className={styles.formlog}>Lozinka</label>
                     <input type="password" className="form-control" placeholder="Unesite lozinku" required />
                 </div>
+                <div className="form-group" >
+                    <label className={styles.formlog}>Broj kreditne kartice</label>
+                    <input type="tel" className="form-control" placeholder="Broj kartice" />
+                </div>
 
                 <button type="submit" className={buttonStyles.quaternary}>Registriraj se</button>
   
