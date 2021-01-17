@@ -26,7 +26,8 @@
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^5.2.0",
-    "reactstrap": "^8.8.1"
+    "reactstrap": "^8.8.1",
+    "sweetalert2": "^10.13.0"
   },
   "devDependencies": {
     "prettier": "2.1.2"

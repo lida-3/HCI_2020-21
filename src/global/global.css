@@ -15,3 +15,11 @@ a:hover {
   text-decoration: none !important;
   color: inherit;
 }
+
+button:focus {
+  outline: 0 !important;
+}
+
+input:focus {
+  outline: 0 !important;
+}

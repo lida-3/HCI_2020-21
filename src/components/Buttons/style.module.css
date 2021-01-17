@@ -57,7 +57,6 @@
   border: none;
 }
 
-
 .quaternary {
   display: flex;
   margin: auto;
@@ -70,13 +69,13 @@
   color: #ffffff;
   font-size: 20px;
   font-family: sans-serif;
-  text-align: center; 
+  text-align: center;
   letter-spacing: 2px;
 }
 
-.volontiraj{
+.volontiraj {
   display: inline-block;
-  
+
   margin-top: 30px;
   border: none;
   padding: 7px 20px;
@@ -85,12 +84,12 @@
   color: #ffffff;
   font-size: 18px;
   font-family: sans-serif;
-  text-align: center; 
+  text-align: center;
   letter-spacing: 2px;
   width: 20%;
 }
 
-.poruka{
+.poruka {
   display: inline-block;
   border: none;
   padding: 7px 20px;
@@ -99,7 +98,7 @@
   color: #ffffff;
   font-size: 18px;
   font-family: sans-serif;
-  text-align: center; 
+  text-align: center;
   letter-spacing: 2px;
   width: 30%;
 }
@@ -113,16 +112,43 @@
   color: #ffffff;
   font-size: 18px;
   font-family: sans-serif;
-  text-align: center; 
+  text-align: center;
   letter-spacing: 2px;
-
-  
+  margin-left: 20px;
 }
 
 .volontiraj:hover,
 .poruka:hover,
 .submit:hover {
   background-color: #2e3687;
+}
+
+.potvrdi {
+  display: inline-block;
+  border: none;
+  padding: 7px 20px;
+  border-radius: 30px;
+  background-color: #cc9ea5;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-left: 20px;
+}
+
+.odustani {
+  display: inline-block;
+  border: none;
+  padding: 7px 20px;
+  border-radius: 30px;
+  background-color: #7180ac;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-left: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -138,7 +164,6 @@
     padding: 4px;
     font-size: 10px;
     margin-bottom: 10px;
-    
   }
 }
 
@@ -154,53 +179,46 @@
 
 @media screen and (max-width: 768px) {
   .quaternary {
-    font-size: 16px;
-    padding: 4px 10px;
-    width: auto;
-    margin-bottom: 50px;
-   
-   
+    width: 200px;
+    height: 40px;
+    margin: auto;
+    padding: 5px 47px;
   }
 }
-
 
 @media screen and (max-width: 768px) {
   .primaryM {
-    
-  margin: 10px;
-  border: none;
-  padding: 7px 20px;
-  border-radius: 30px;
-  background-color: #cc9ea5;
-  color: #ffffff;
-  font-size: 15px;
-  font-family: sans-serif;
-  letter-spacing: 2px;
-  margin: 10px;
-  border: none;
-  padding: 7px 20px;
-  border-radius: 30px;
+    margin: 10px;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 30px;
+    background-color: #cc9ea5;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    margin: 10px;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 30px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .volontiraj
-   {
-   font-size: 16px;
-   width: 50%;
+  .volontiraj {
+    font-size: 16px;
+    width: 50%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .poruka
-   {
-   font-size: 16px;
-   width: 50%;
+  .poruka {
+    font-size: 16px;
+    width: 50%;
   }
 }
 @media screen and (max-width: 768px) {
-  .submit
-   {
-   font-size: 16px;
+  .submit {
+    font-size: 16px;
   }
 }
