@@ -27,8 +27,8 @@ const NavigationBar = ({ activeTab, useThisStyle, props }) => {
     return(
     <nav className={styles[useThisStyle || 'navigationBar']}>
         {navTabs.map(({tab, to}) => (
-          <Link to={to} >
-              <li className={tab === activeTab ? styles.active : ''}>{tab}</li>
+          <Link to={to} key={tab}  >
+              <li  className={tab === activeTab ? styles.active : ''}>{tab}</li>
           </Link>)
         )}
         <div className = {styles.razmak}>

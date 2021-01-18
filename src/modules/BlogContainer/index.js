@@ -25,10 +25,10 @@ const BlogContainers = () => {
               srcSet
               srcSetWebp
               srcWebp
-              width
-              height
               base64
               aspectRatio
+              width
+              height
             }
           }
         }
@@ -39,12 +39,14 @@ const BlogContainers = () => {
       <section className={styles.container}>
         <h2>Pročitajte naše priče i iskustva s prethodnih događaja!</h2>
         <ul className={styles.list}>
-          {data.allContentfulBlogPost.nodes.map(node => {
+          {data.allContentfulBlogPost.nodes.map((node,i) => {
             return (
             
-              <Link to={`/posts/${node.slug}`}>
+              <Link key={i} to={`/posts/${node.slug}`}>
                 <li>
+                  <div>
                   <Img fixed={node.coverImage.fixed} />
+                  </div>
                   <h3>{node.title}</h3>
                   <span>{node.summary.internal.content}</span>
                 </li>

@@ -79,21 +79,28 @@
     .rightdiv{
         
         left: 10%;
+        width: 70%;
         margin-top: 50px;
     }
     
   }
 
   @media screen and (max-width: 768px) {
-    .forma{
+    .forma,
+    .poruka{
         width: 200px;
     } 
   }
   @media screen and (max-width: 768px) {
-    .poruka,
     .donirajP,
     .naslov{
-        width: 350px;
-    } 
+        width: 100%;
+       
+    }
   }
  
+  @media screen and (max-width: 768px) {
+    .poruka{
+        width: 300px;
+    } 
+  }

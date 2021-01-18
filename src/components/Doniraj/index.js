@@ -35,8 +35,12 @@ function ok() {
 
  const Doniraj = () => {
 
- const [modal, setModal] = useState(false);
- const toggle = () => setModal(!modal);
+  const [modal, setModal] = useState(false);
+  const toggle = () => setModal(!modal);
+  const [modal1, setModal1] = useState(false);
+  const toggle1 = () => setModal1(!modal1);
+  const [modal2, setModal2] = useState(false);
+  const toggle2 = () => setModal2(!modal2);
 
  
 
@@ -45,7 +49,7 @@ function ok() {
       <div className = {styles.cardsContainer}>
         <div className={styles.cards}>
           <div className={styles.image}>
-              <Autizam ></Autizam>
+              <Autizam />
           </div>
             <div className={styles.cardMediaContainer}>
               <div className={styles.cardMediaHeading}>SUZAH</div>
@@ -59,9 +63,7 @@ function ok() {
                       <p className={styles.textPop}>Upišite iznos koji želite donirati (u kunama):</p>
                        <div className={styles.input}><input type="text" className={styles.textField}></input></div>
                     <div className={styles.modalButtons}> 
-                        <button  type="button"  className={buttonStyles.potvrdi} onClick={() => {
-                        toggle();
-                        ok();}}>Potvrdi</button>
+                        <button  type="button"  className={buttonStyles.potvrdi} onClick={toggle}>Potvrdi</button>
                         <button type="submit" className={buttonStyles.odustani} onClick={toggle}>Odustani</button>
                    </div>  
 
@@ -72,22 +74,22 @@ function ok() {
         </div>
         <div className={styles.cards}>
           <div className={styles.image}>
-              <Bestie></Bestie>
+              <Bestie/>
           </div>
           <div className={styles.cardMediaContainer}>
               <div className={styles.cardMediaHeading}>Beštie</div>
               <div className={styles.subtitle}>Zaklada za zaštitu životinja</div>
               <div className={styles.buttonContainer}>
-                <button className={buttonStyles.primary} onClick={toggle}>Doniraj</button>
+                <button className={buttonStyles.primary} onClick={toggle1}>Doniraj</button>
               </div>
           </div>
-          <Modal isOpen={modal} toggle={toggle} className={styles.modalic}>
+          <Modal isOpen={modal1} toggle1={toggle1} className={styles.modalic}>
                   <ModalBody>
                       <p className={styles.textPop}>Upišite iznos koji želite donirati (u kunama):</p>
                        <div className={styles.input}><input type="text" className={styles.textField}></input></div>
                     <div className={styles.modalButtons}> 
-                        <button  type="button"  className={buttonStyles.potvrdi} className={buttonStyles.potvrdi} onClick={toggle}>Potvrdi</button>
-                        <button type="submit" className={buttonStyles.odustani} onClick={toggle}>Odustani</button>
+                        <button  type="button"  className={buttonStyles.potvrdi} className={buttonStyles.potvrdi} onClick={toggle1}>Potvrdi</button>
+                        <button type="submit" className={buttonStyles.odustani} onClick={toggle1}>Odustani</button>
                    </div>  
                   </ModalBody>
 
@@ -96,149 +98,30 @@ function ok() {
         </div>
         <div className={styles.cards}>
           <div className={styles.image}>
-              <CrveniKriz ></CrveniKriz>
+              <CrveniKriz />
           </div>
           <div className={styles.cardMediaContainer}>
               <div className={styles.cardMediaHeading}>Crveni križ</div>
               <div className={styles.subtitle}>Humanitarno društvo</div>
               <div className={styles.buttonContainer}>
-                <button className={buttonStyles.primary} onClick={toggle}>Doniraj</button>
+                <button className={buttonStyles.primary} onClick={toggle2}>Doniraj</button>
                 
               </div>
           </div>
-          <Modal isOpen={modal} toggle={toggle} className={styles.modalic}>
+          <Modal isOpen={modal2} toggle={toggle2} className={styles.modalic}>
                   <ModalBody>
                       <p className={styles.textPop}>Upišite iznos koji želite donirati (u kunama):</p>
                        <div className={styles.input}><input type="text" className={styles.textField}></input></div>
                     <div className={styles.modalButtons}> 
-                        <button  type="button"  className={buttonStyles.potvrdi} onClick={toggle}>Potvrdi</button>
-                        <button type="submit" className={buttonStyles.odustani} onClick={toggle}>Odustani</button>
+                        <button  type="button"  className={buttonStyles.potvrdi} onClick={toggle2}>Potvrdi</button>
+                        <button type="submit" className={buttonStyles.odustani} onClick={toggle2}>Odustani</button>
                    </div>  
                   </ModalBody>
 
             </Modal>
             
         </div>
-        <div className={styles.cards}>
-           <div className={styles.image}>
-              <Palcici ></Palcici>
-           </div>
-           <div className={styles.cardMediaContainer}>
-              <div className={styles.cardMediaHeading}>Palčići</div>
-              <div className={styles.subtitle}>Klub roditelja nedonoščadi</div>
-              <div className={styles.buttonContainer}>
-                <button className={buttonStyles.primary} onClick={toggle}>Doniraj</button>
-              </div>
-          </div>
-          <Modal isOpen={modal} toggle={toggle} className={styles.modalic}>
-                  <ModalBody>
-                      <p className={styles.textPop}>Upišite iznos koji želite donirati (u kunama):</p>
-                       <div className={styles.input}><input type="text" className={styles.textField}></input></div>
-                    <div className={styles.modalButtons}> 
-                        <button  type="button"  className={buttonStyles.potvrdi} onClick={toggle}>Potvrdi</button>
-                        <button type="submit" className={buttonStyles.odustani} onClick={toggle}>Odustani</button>
-                   </div>  
-                  </ModalBody>
-
-            </Modal>
-            
-        </div>
-        <div className={styles.cards}>
-           <div className={styles.image}>
-              <Pupoljci ></Pupoljci>
-           </div>
-           <div className={styles.cardMediaContainer}>
-              <div className={styles.cardMediaHeading}>Brački pupoljci</div>
-              <div className={styles.subtitle}>Udruga za djecu s teškoćama u razvoju</div>
-              <div className={styles.buttonContainer}>
-                <button className={buttonStyles.primary} onClick={toggle}>Doniraj</button>
-              </div>
-          </div>
-          <Modal isOpen={modal} toggle={toggle} className={styles.modalic}>
-                  <ModalBody>
-                      <p className={styles.textPop}>Upišite iznos koji želite donirati (u kunama):</p>
-                       <div className={styles.input}><input type="text" className={styles.textField}></input></div>
-                    <div className={styles.modalButtons}> 
-                        <button  type="button"  className={buttonStyles.potvrdi} onClick={toggle}>Potvrdi</button>
-                        <button type="submit" className={buttonStyles.odustani} onClick={toggle}>Odustani</button>
-                   </div>  
-                  </ModalBody>
-
-            </Modal>
-            
-        </div>
-        <div className={styles.cards}>
-           <div className={styles.image}>
-              <Krijesnica ></Krijesnica>
-           </div>
-           <div className={styles.cardMediaContainer}>
-              <div className={styles.cardMediaHeading}>Krijesnica</div>
-              <div className={styles.subtitle}>Udruga za pomoć djeci s malignim bolestima</div>
-              <div className={styles.buttonContainer}>
-                <button className={buttonStyles.primary} onClick={toggle}>Doniraj</button>
-              </div>
-          </div>
-          <Modal isOpen={modal} toggle={toggle} className={styles.modalic}>
-                  <ModalBody>
-                      <p className={styles.textPop}>Upišite iznos koji želite donirati (u kunama):</p>
-                       <div className={styles.input}><input type="text" className={styles.textField}></input></div>
-                    <div className={styles.modalButtons}> 
-                        <button  type="button"  className={buttonStyles.potvrdi} onClick={toggle}>Potvrdi</button>
-                        <button type="submit" className={buttonStyles.odustani} onClick={toggle}>Odustani</button>
-                   </div>  
-                  </ModalBody>
-
-            </Modal>
-            
-        </div>
-        <div className={styles.cards}>
-           <div className={styles.image}>
-              <Most ></Most>
-           </div>
-           <div className={styles.cardMediaContainer}>
-              <div className={styles.cardMediaHeading}>moST</div>
-              <div className={styles.subtitle}>Centar za beskućnike i smanjenje siromaštva</div>
-              <div className={styles.buttonContainer}>
-                <button className={buttonStyles.primary} onClick={toggle}>Doniraj</button>
-              </div>
-          </div>
-          <Modal isOpen={modal} toggle={toggle} className={styles.modalic}>
-                  <ModalBody>
-                      <p className={styles.textPop}>Upišite iznos koji želite donirati (u kunama):</p>
-                       <div className={styles.input}><input type="text" className={styles.textField}></input></div>
-                    <div className={styles.modalButtons}> 
-                        <button  type="button"  className={buttonStyles.potvrdi} oonClick={toggle}>Potvrdi</button>
-                        <button type="submit" className={buttonStyles.odustani} onClick={toggle}>Odustani</button>
-                   </div>  
-                  </ModalBody>
-
-            </Modal>
-            
-        </div>
-        <div className={styles.cards}>
-           <div className={styles.image}>
-              <Most ></Most>
-           </div>
-           <div className={styles.cardMediaContainer}>
-              <div className={styles.cardMediaHeading}>moST</div>
-              <div className={styles.subtitle}>Centar za beskućnike i smanjenje siromaštva</div>
-              <div className={styles.buttonContainer}>
-                <button className={buttonStyles.primary} onClick={toggle}>Doniraj</button>
-              </div>
-          </div>
-          <Modal isOpen={modal} toggle={toggle} className={styles.modalic}>
-                  <ModalBody>
-                      <p className={styles.textPop}>Upišite iznos koji želite donirati:</p>
-                       <div className={styles.input}><input type="text" className={styles.textField}></input></div>
-                    <div className={styles.modalButtons}> 
-                        <button  type="button"  className={buttonStyles.potvrdi} onClick={toggle}>Potvrdi</button>
-                        <button type="submit" className={buttonStyles.odustani} onClick={toggle}>Odustani</button>
-                   </div>  
-                  </ModalBody>
-
-            </Modal>
-            
-        </div>
+      
 
 
       </div>

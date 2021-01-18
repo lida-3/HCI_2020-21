@@ -86,7 +86,7 @@ const DogadajiContent = memo(({ fetchData }) => {
       return false;
     
     return true;
-  }).map((item, i) => <div className={styles.container} >
+  }).map((item, i) => <div key={i} className={styles.container} >
     <div className={styles.cardMedia}>
       <div className={styles.cardMediaObjectContainer}>
         <DogadajImage
@@ -119,15 +119,17 @@ const DogadajiContent = memo(({ fetchData }) => {
           id="item-search"
           label="Pretraživanje"
           variant="standard"
+      
           value={searchText}
           size="small"
           onChange={(e) => handleInputChange(e.target.value)}
         />
       </div>
-      <div className={styles.buttonContainer}>
+      <div className={styles.buttonContainer}>  
         <ButtonToggle 
           className={classes.buttonColors}
-          togglable={true}
+          //togglable={true}
+          
           selected={filter.has("Sport")}
           onClick={() => filterClick("Sport")}
         >
@@ -135,7 +137,7 @@ const DogadajiContent = memo(({ fetchData }) => {
         </ButtonToggle>
         <ButtonToggle
           className={classes.buttonColors}
-          togglable={true}
+          //togglable={true}
           selected={filter.has("Kultura")}
           onClick={(e) => filterClick("Kultura")}
 
@@ -144,7 +146,7 @@ const DogadajiContent = memo(({ fetchData }) => {
         </ButtonToggle>
         <ButtonToggle
           className={classes.buttonColors}
-          togglable={true}
+          //togglable={true}
           selected={filter.has("Druženja")}
           onClick={(e) => filterClick("Druženja")}
         >
@@ -152,7 +154,7 @@ const DogadajiContent = memo(({ fetchData }) => {
         </ButtonToggle>
           <ButtonToggle
           className={classes.buttonColors}
-          togglable={true}
+          //togglable={true}
           selected={filter.has("Koncerti")}
           onClick={(e) => filterClick("Koncerti")}
         >
@@ -160,7 +162,7 @@ const DogadajiContent = memo(({ fetchData }) => {
         </ButtonToggle>
         <ButtonToggle
           className={classes.buttonColors}
-          togglable={true}
+          //togglable={true}
           selected={filter.has("Radna akcija")}
           onClick={(e) => filterClick("Radna akcija")}
         >

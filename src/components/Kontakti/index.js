@@ -56,7 +56,7 @@ const Kontakt =() =>{
                    <label><input type="radio" value="mjesecno"/>    Mjesečno</label><br/>
                    <label><input type="radio" value="jednom"/>   Jednokratno</label><br/>
                    </p>
-                   <button type="submit" className={buttonStyles.submit}>Volontiraj</button>
+                   <button type="submit" className={buttonStyles.submit} onClick={toggle}>Volontiraj</button>
                   </ModalBody>
                   <ModalFooter>
                   <Button onClick={toggle}>

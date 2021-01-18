@@ -30,7 +30,7 @@ const BlogPost = ({ pageContext }) => {
           
         </header>
         <div className={styles.imagediv}>
-            <Img fluid={coverImage.fluid} className={styles.images} /></div>
+            <Img fixed={coverImage.fixed} className={styles.images} /></div>
         <article>
         {renderRichText(body)}
         </article>

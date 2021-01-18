@@ -12,8 +12,13 @@
       width: 70%;
       margin: auto;
       height: auto;
+     
   }
-  
+  .imagediv{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
   .container header {
     width: 100%;
     display: flex;
@@ -24,12 +29,8 @@
   
     
   }
-  .imagediv{
-      display: block;
-      width: 70%;
-      margin: auto;
-  }
   
+ 
   .strelice{
       display: block;
       width: 70%;
@@ -40,15 +41,26 @@
       cursor: pointer;
       margin-top: 10px;
   }
+ 
   .strelicaP{
       display: flex;
       float: left;
+      color:#7180ac;
       
   }
-  
+  .strelicaP:hover{
+    color: #2e3687;
+
+  }
+
   .strelicaS{
       display: flex;
       float: right;
+      color: #7180ac;
+  }
+  .strelicaS:hover{
+    color: #2e3687;
+
   }
     
   .container article {
@@ -65,11 +77,28 @@
   @media screen and (max-width: 768px) {
     .container   {
       text-align: center;
+      
+      
     }
   }
  
   @media screen and (max-width: 768px) {
     .imagediv   {
       display: block;
+    
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .images   {
+      width: 350px !important;
+      height: 250px !important;
+    
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .images   {
+      width: 250px !important;
+      height: 150px !important;
+    
     }
   }

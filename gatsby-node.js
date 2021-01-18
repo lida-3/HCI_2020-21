@@ -23,11 +23,13 @@ exports.createPages = async ({ graphql, actions }) => {
         slug
         updatedAt
         coverImage {
-            fluid(maxWidth: 700) {
+            fixed(width: 500) {
             src
             srcSet
             srcSetWebp
             srcWebp
+            width
+            height
             base64
             aspectRatio
           }
