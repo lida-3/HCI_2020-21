@@ -93,11 +93,6 @@ const Header = () => {
                 className={styles.navbarName}
                 activeclassname={styles.navbarName__active}
               >
-                <img
-                  className={styles.icon}
-                  src={login}
-                  alt="login"
-                ></img>{" "}
               </a>
               <div className={styles.navbarName}>
             <button onClick={toggle2} className ={buttonStyles.primaryM}> {isLoggedIn ? 'Odjava' : 'Prijava'}</button>
@@ -126,3 +121,4 @@ const Header = () => {
 }
 
 export default Header
+

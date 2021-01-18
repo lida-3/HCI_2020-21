@@ -12,52 +12,56 @@ const Homepage =() =>(
                 <h1 className={styles.headings}>HUMAN SAPIENS</h1>
                 <p className={styles.paragraphs}>
                     Dobrodošli na stranicu za humanitarne događaje i donacije! <br />
-                    Želiš pomići i činiti dobra djela, ali ne znaš gdje i kako početi? Na pravom si mjestu!
+                    Želiš pomoći i činiti dobra djela, ali ne znaš gdje i kako početi? Na pravom si mjestu!
                 </p>
-                <button className ={buttonStyles.secondary}>UKLJUČI SE</button>
-                <button className ={buttonStyles.secondary}>SAZNAJ VIŠE</button>
+                <div className={styles.buttonContainer}>
+                <Link to ="#two"><button className ={buttonStyles.secondary}>UKLJUČI SE</button></Link>
+                 <Link to="#three"><button className ={buttonStyles.secondary}>SAZNAJ VIŠE</button></Link></div>
         
             </div>
-            <div className={styles.carouseldiv}>   
+            <div className={styles.carouseldiv}>
+            
+            <Link to = "/dogadaji">
             <Carousel>
                 <Carousel.Item interval={2000}>
                 <img className={styles.img} src="https://www.dinamikom.eu/images/blog/700-800/736/CL_Down-sindrom_naslovna.jpg"
         alt="downsindrom"
         />
             <Carousel.Caption className={styles.events}>
-                <h3 className={styles.headings}>Svjetski dan osoba s Down sindromom 2021</h3>
-                <p>21. ožujak 2021.</p>
+                <h3 className={styles.headingsCarousel}>Svjetski dan osoba s Downovim sindromom</h3>
+                <p className={styles.date}>Sri, 21.ožujka, 11:00</p>
             </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={2000}>
                 <img
                 className={styles.img}
-                    src="https://www.globalnovine.eu/wp-content/uploads/2018/10/Webp.net-resizeimage-4.jpg"
+                    src={require('../../images/WorldRun.jpg')} 
                     alt="72sata"
                 />
             <Carousel.Caption className={styles.events}>
-            <h3 className={styles.headings}>72 sata bez kompromisa</h3>
-                <p>proljeće, 2021.</p>
+            <h3 className={styles.headingsCarousel}>Utrka Wings for life World Run</h3>
+                <p className={styles.date}>Sub, 9.svibnja, 10:00</p>
             </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={2000}>
                 <img
                 className={styles.img}
-                src="https://m.vecernji.hr/media/img/31/3f/a7ac5cebf74d98025f8c.jpeg"
+                src={require('../../images/boranka.jpg')} 
                 alt="pomoc Petrinji"
                 />
             <Carousel.Caption className={styles.events}>
-                <h3 className={styles.headings}>Prikupljanje pomoći za potresom pogođena područja</h3>
-                <p>siječanj, 2021.</p>
+                <h3 className={styles.headingsCarousel}>Pošumljavanja opožarenih područja</h3>
+                <p className={styles.date}>Svake subote, 10:00 - 14:00</p>
             </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
+        </Link>
 
         </div>
 
 
         </div>
-        <div className={styles.boxtwo}>
+        <div id="two" className={styles.boxtwo}>
             <div className={styles.imgdiv}>
             <Link to ="/dogadaji">
             <img
@@ -87,7 +91,7 @@ const Homepage =() =>(
                 <button className={buttonStyles.tertiary}>KONTAKTIRAJ NAS I POSTANI VOLONTER/KA</button></Link>
             </div>
             </div>
-        <div className={styles.boxthree}>
+        <div id="three" className={styles.boxthree}>
             <div className={styles.aboutus}>
                 <h2 className={styles.onama}>O NAMA</h2>
                 <p className={styles.onamatext}>Pozdrav! Ova stranica nastala je s idejom kako pomoći ljudima koji žele pomoći drugima. Ako si u potrazi za humanitarnim događajima u kojim želiš sudjelovati ili udrugama kojima želiš pomoći (novčanim donacijama ili volontiranjem), ovo je mjesto za tebe. Također, možeš pročitati priče i iskustva volontera s prethodnih događaja. Nadamo se da ćeš na našoj stranici pronaći sadržaj koji će i tebe potaknuti

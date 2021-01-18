@@ -2,52 +2,81 @@
 .boxone {
   background-color: #efe5e7;
   display: flex;
-  padding-top: 120px;
-  justify-content: space-evenly;
+  padding-top: 180px;
+  padding-bottom: 100px;
+  justify-content: center;
 }
 .introdiv {
   background-color: #7180ac;
   color: #efe5e7;
   text-align: center;
-  border-radius: 7px;
-  padding: 20px;
-  width: 30%;
-  margin-top: 50px;
+  border-radius: 4px;
+  padding: 20px 25px;
+  width: 400px;
   margin-left: 10%;
+  margin-top: 60px;
   margin-bottom: 50px;
-  margin-right: 30px;
-  height: 50%;
+  margin-right: -25px;
+  z-index: 2;
+  height: 350px;
+  box-shadow: 0 5px 10px #7180ac;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.headings {
+  text-align: justify;
+  margin-left: 6px;
+  margin-bottom: 13px;
+}
+
+.paragraphs {
+  font-size: 16px;
+  line-height: 2rem;
+  margin: auto 10px;
+  letter-spacing: 1px;
+  text-align: justify;
 }
 .carouseldiv {
-  width: 60%;
   overflow: hidden;
-  margin: auto;
+  margin-left: 0px;
   margin-right: 10%;
-  background-color: #7180ac;
-
-  height: 400px;
-  width: 700px;
+  z-index: 1;
+  width: 720px;
 }
 
+.headingsCarousel {
+  color: #2e3687;
+  text-align: center;
+  font-weight: 200;
+}
+.date {
+  color: #7f84bb;
+}
 .img {
   display: block;
   justify-content: center;
   width: 100%;
-  height: 400px;
+  height: 470px;
 }
 
 .events {
   display: block;
-  color: black;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.6);
   margin-bottom: 5px;
+  padding: 10px;
 }
 
 /*drugi dio*/
 .boxtwo {
   display: flex;
-  background-color: rgba(239, 229, 231, 0.3);
+  background-color: rgba(239, 229, 231, 0.4);
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .icon,
 .icon2 {
@@ -56,6 +85,11 @@
   left: 1%;
   width: 370px;
   height: 250px;
+}
+
+.icon:hover,
+.icon2:hover {
+  transform: scale(1.1);
 }
 
 .imgdiv {
@@ -68,6 +102,8 @@
   display: flex;
   background-color: #e4e8f4;
   justify-content: space-evenly;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .aboutus {
@@ -75,15 +111,17 @@
   padding: 30px;
   margin: 30px;
   line-height: 2rem;
+  letter-spacing: 1px;
   color: #2e3687;
   width: 500px;
 }
 .usimg {
   display: block;
-  height: 300px;
-  width: 500px;
+  height: 370px;
+  width: 570px;
   margin: 30px;
-  margin-top: 70px;
+  margin-left: 30px;
+  margin-top: 50px;
 }
 .onama {
   text-align: left;
@@ -94,6 +132,10 @@
 /*responzivnost*/
 
 @media screen and (max-width: 768px) {
+  .boxone {
+    padding-bottom: 0px;
+  }
+
   .carouseldiv {
     /*
         width: 60%;
@@ -152,7 +194,10 @@
         padding-bottom: 3px;
         text-align: center;*/
     margin: 0px;
+    text-align: center;
     font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
@@ -161,6 +206,7 @@
     /*font-size: 11px; */
     font-size: 12px;
     text-align: center;
+    line-height: 1rem;
   }
 }
 

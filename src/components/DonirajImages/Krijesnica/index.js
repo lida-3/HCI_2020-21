@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 const Krijesnica = () => {
 const data = useStaticQuery(graphql`
   query {
-    krijesnica: file(relativePath: {eq: "krijesnica.jpg"}) {
+    krijesnica: file(relativePath: {eq: "krijesnica.jpeg"}) {
     childImageSharp {
       fluid(maxWidth: 960, maxHeight: 1200) {
        
