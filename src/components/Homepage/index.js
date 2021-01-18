@@ -21,41 +21,41 @@ const Homepage =() =>(
             </div>
             <div className={styles.carouseldiv}>
             
-            <Link to = "/dogadaji">
+           
             <Carousel>
                 <Carousel.Item interval={2000}>
-                <img className={styles.img} src="https://www.dinamikom.eu/images/blog/700-800/736/CL_Down-sindrom_naslovna.jpg"
+                 <Link to = "/dogadaji"><img className={styles.img} src="https://www.dinamikom.eu/images/blog/700-800/736/CL_Down-sindrom_naslovna.jpg"
         alt="downsindrom"
-        />
+        /></Link>
             <Carousel.Caption className={styles.events}>
                 <h3 className={styles.headingsCarousel}>Svjetski dan osoba s Downovim sindromom</h3>
                 <p className={styles.date}>Sri, 21.ožujka, 11:00</p>
             </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={2000}>
-                <img
+                 <Link to = "/dogadaji"><img
                 className={styles.img}
                     src={require('../../images/WorldRun.jpg')} 
                     alt="72sata"
-                />
+                /></Link>
             <Carousel.Caption className={styles.events}>
             <h3 className={styles.headingsCarousel}>Utrka Wings for life World Run</h3>
                 <p className={styles.date}>Sub, 9.svibnja, 10:00</p>
             </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={2000}>
-                <img
+                 <Link to = "/dogadaji"><img
                 className={styles.img}
                 src={require('../../images/boranka.jpg')} 
                 alt="pomoc Petrinji"
-                />
+                /></Link>
             <Carousel.Caption className={styles.events}>
                 <h3 className={styles.headingsCarousel}>Pošumljavanja opožarenih područja</h3>
                 <p className={styles.date}>Svake subote, 10:00 - 14:00</p>
             </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
-        </Link>
+       
 
         </div>
 

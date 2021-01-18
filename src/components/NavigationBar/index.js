@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import { navTabs } from '../../constants/const'
 import styles from './style.module.css'
 import buttonStyles from '../Buttons/style.module.css'
-import LoginForm from '../LoginForm'
 import Register from '../Register'
 import {
     Button,
@@ -22,7 +21,7 @@ import {navigate} from 'gatsby'
 const loggedIn = () => !!myLocalStorage.getItem('loggedIn')
 const NavigationBar = ({ activeTab, useThisStyle, props }) => {
     const [modal, setModal] = useState(false)
-    const [isLoggedIn, setLoggedIn] = useState(loggedIn())
+    const [isLoggedIn] = useState(loggedIn())
     const toggle = () => !isLoggedIn ? setModal(!modal) : (myLocalStorage.removeItem("loggedIn"), navigate('/'))
     return(
     <nav className={styles[useThisStyle || 'navigationBar']}>

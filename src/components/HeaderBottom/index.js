@@ -8,7 +8,6 @@ import {
 import "bootstrap/dist/css/bootstrap.min.css"
 import styles from './style.module.css'
 import dots from "../../images/iconDots.png"
-import login from "../../images/iconUser.png"
 import buttonStyles from '../Buttons/style.module.css'
 import LoginForm from '../LoginForm'
 import Register from '../Register'
@@ -20,7 +19,6 @@ import {
     ModalFooter,
   
   } from "reactstrap"
-import Login from '../LoginForm'
 import {myLocalStorage} from '../../helper'
 import {navigate} from 'gatsby'
 
@@ -29,7 +27,7 @@ const Header = () => {
   const [dropdownOpen, setOpen] = useState(false)
   const [modal, setModal] = useState(false)
  
-    const [isLoggedIn, setLoggedIn] = useState(loggedIn())
+    const [isLoggedIn] = useState(loggedIn())
     const toggle2 = () => !isLoggedIn ? setModal(!modal) : (myLocalStorage.removeItem("loggedIn"), navigate('/'))
   const toggle = () => setOpen(!dropdownOpen)
   const toggleAll = () => {

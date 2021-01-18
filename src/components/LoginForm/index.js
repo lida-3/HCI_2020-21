@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import buttonStyles from '../Buttons/style.module.css'
 import styles from './style.module.css'
 import {navigate} from 'gatsby'

@@ -9,7 +9,7 @@ import styles from './blog.module.css'
 
  
 const BlogPost = ({ pageContext }) => {
-  const { body, title, coverImage, summary, next, prev } = pageContext
+  const { body, title, coverImage, next, prev } = pageContext
  
   return (
       <div>

@@ -10,12 +10,8 @@ import Palcici from "../DonirajImages/Palcici"
 import Pupoljci from "../DonirajImages/Pupoljci"
 import Maestral from "../DonirajImages/Maestral"
 import {
-    Button,
     Modal,
-    ModalHeader,
     ModalBody,
-    ModalFooter,
-  
   } from "reactstrap"
 
 

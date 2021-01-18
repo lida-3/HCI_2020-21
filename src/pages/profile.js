@@ -4,7 +4,7 @@ import {navigate} from 'gatsby'
 import {myLocalStorage} from '../helper'
  
 const Profile = () => {
-  const [user, setUser] = useState(myLocalStorage.getItem('loggedIn'))
+  const [user] = useState(myLocalStorage.getItem('loggedIn'))
  
   if (!user) {
     return <p>

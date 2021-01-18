@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styles from '../LoginForm/style.module.css'
 import buttonStyles from '../Buttons/style.module.css'
 const Register = () => {

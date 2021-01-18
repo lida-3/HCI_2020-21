@@ -1,4 +1,4 @@
-import React, { memo, useCallback, useState, useEffect } from 'react'
+import React, { memo} from 'react'
 import TextField from "@material-ui/core/TextField"
 import eventsList from "../../data/dogadaji.json"
 import ButtonToggle from '@material-ui/lab/ToggleButton'
@@ -52,7 +52,7 @@ const useStyles = makeStyles({
 
 const DogadajiContent = memo(({ fetchData }) => {
   const classes = useStyles();
-  const [items, setItems] = React.useState(eventsList);
+  const [items] = React.useState(eventsList);
   const [searchText, setSearchText] = React.useState("");
   const [filter, setFilter] = React.useState(new Set());
 
