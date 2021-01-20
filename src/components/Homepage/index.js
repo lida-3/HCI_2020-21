@@ -69,8 +69,9 @@ const Homepage =() =>(
                 src={require('../../images/events.png')} 
                 alt="dogadaji"
                 />
+                <div className={styles.buttonContainertwo}>
                 <button className={buttonStyles.tertiary}
-                >PREGLED SVIH HUMANITARHNIH DOGAĐAJA</button></Link>
+                >PREGLED SVIH HUMANITARHNIH DOGAĐAJA</button></div></Link>
             </div>
             <div className={styles.imgdiv}>
              <Link to ="/doniraj">
@@ -79,7 +80,8 @@ const Homepage =() =>(
                 src={require('../../images/donate.png')} 
                 alt="doniraj"
                 />
-                <button className={buttonStyles.tertiary}>PRONAĐI UDRUGE KOJE ŽELIŠ PODRŽATI I DONIRAJ</button></Link>
+                <div className={styles.buttonContainertwo}>
+                <button className={buttonStyles.tertiary}>PRONAĐI UDRUGE KOJE ŽELIŠ PODRŽATI I DONIRAJ</button></div></Link>
             </div>
             <div className={styles.imgdiv}>
              <Link to="/kontakt">
@@ -88,7 +90,8 @@ const Homepage =() =>(
                 src={require('../../images/info.png')} 
                 alt="kontakt"
                 />
-                <button className={buttonStyles.tertiary}>KONTAKTIRAJ NAS I POSTANI VOLONTER/KA</button></Link>
+                <div className={styles.buttonContainertwo}>
+                <button className={buttonStyles.tertiary}>KONTAKTIRAJ NAS I POSTANI VOLONTER/KA</button></div></Link>
             </div>
             </div>
         <div id="three" className={styles.boxthree}>

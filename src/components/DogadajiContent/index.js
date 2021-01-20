@@ -87,6 +87,7 @@ const DogadajiContent = memo(({ fetchData }) => {
     
     return true;
   }).map((item, i) => <div key={i} className={styles.container} >
+    <div className={styles.container2}>
     <div className={styles.cardMedia}>
       <div className={styles.cardMediaObjectContainer}>
         <DogadajImage
@@ -105,6 +106,7 @@ const DogadajiContent = memo(({ fetchData }) => {
           <span className={styles.subtle}>{item.description}</span>
         </div>
 
+    </div>
     </div>
     </div>
     </div>
@@ -169,7 +171,7 @@ const DogadajiContent = memo(({ fetchData }) => {
           Radne akcije
         </ButtonToggle>
       </div>
-      <div>
+      <div className={styles.filter}>
         {filteredItems}
       </div>
     </div>
