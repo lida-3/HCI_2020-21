@@ -38,7 +38,12 @@ const Header = () => {
     <div className={styles.nav}>
       
         <Link
+          
           to="/naslovnica"
+          activeStyle={{
+            color: '#B4717B',
+            fontWeight: 700
+          }}
           className={styles.navbarName}
           activeclassname={styles.navbarName__active}
         >
@@ -46,6 +51,10 @@ const Header = () => {
         </Link>
         <Link
           to="/dogadaji"
+          activeStyle={{
+            color: '#B4717B',
+            fontWeight: 700
+          }}
           className={styles.navbarName}
           activeclassname={styles.navbarName__active}
         >
@@ -53,19 +62,26 @@ const Header = () => {
         </Link>
         <Link
           to="/doniraj"
+          activeStyle={{
+            color: '#B4717B',
+            fontWeight: 700
+          }}
           className={styles.navbarName}
           activeclassname={styles.navbarName__active}
         >
           DONIRAJ
         </Link>
-
         <Link
-          to="/kontakt"
-          className={styles.navbarName}
-          activeclassname={styles.navbarName__active}
-        >
-          KONTAKT
-        </Link>
+                to="/naseprice"
+                activeStyle={{
+                  color: '#B4717B',
+                  fontWeight: 700
+                }}
+                className={styles.navbarName}
+                activeclassname={styles.navbarName__active}
+              >
+                NAŠE PRIČE
+              </Link>
 
       <ButtonDropdown isOpen={dropdownOpen} toggle={toggle} direction="up">
         <DropdownToggle caret className={styles.button}>
@@ -74,13 +90,17 @@ const Header = () => {
         <DropdownMenu>
           <div className={styles.dropUp}>
             <div className={styles.iconContainer}>
-              <Link
-                to="/naseprice"
-                className={styles.navbarName}
-                activeclassname={styles.navbarName__active}
-              >
-                NAŠE PRIČE
-              </Link>
+            <Link
+            to="/kontakt"
+            activeStyle={{
+              color: '#B4717B',
+              fontWeight: 700
+            }}
+            className={styles.navbarName}
+            activeclassname={styles.navbarName__active}
+          >
+            KONTAKT
+          </Link>
             </div>
             <div
               className={styles.iconContainer}

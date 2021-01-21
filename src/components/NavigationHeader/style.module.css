@@ -4,11 +4,12 @@
   justify-content: flex-end; /* ode se minja da sve ide livo, ako zelimo normalno onda ide space between*/
 }
 .Section {
-  border-bottom: 1px solid #7180ac;
+  border: none;
   position: fixed;
   width: 100%;
   background-color: white;
   z-index: 4 !important;
+  box-shadow: 0 2px 7px  #7180ac;
 }
 
 @media screen and (max-width: 768px) {

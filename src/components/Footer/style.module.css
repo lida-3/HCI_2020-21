@@ -1,6 +1,6 @@
 .footer {
-  background-color: transparent;
-  border-top: 1px solid #7180ac;
+  background-color: #9197AF;
+  
   padding: 1rem;
   bottom: 0;
   left: 0;
@@ -13,7 +13,7 @@
 .footer span {
   margin: 10px;
   font-size: 14px;
-  color: #000000;
+  color: #ffffff;
   font-family: "Helvetica";
   letter-spacing: 1px;
 }
@@ -23,6 +23,7 @@
   margin-left: 5px;
   width: 25px;
   height: 25px;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 768px) {

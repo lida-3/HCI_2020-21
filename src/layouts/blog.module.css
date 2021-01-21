@@ -8,14 +8,16 @@
 .kartica {
   background-color: #ffffff;
   display: block;
-  width: 70%;
+  width: 60%;
   margin: auto;
   height: auto;
+ 
 }
 .imagediv {
   display: flex;
   justify-content: center;
   margin: auto;
+  overflow: hidden;
 }
 .container header {
   width: 100%;
@@ -56,38 +58,61 @@
 }
 
 .container article {
-  line-height: 25px;
+  line-height: 30px;
   font-size: 20px;
   width: 100%;
   text-align: justify;
-  padding: 60px 170px;
+  padding: 60px 50px;
   margin: auto;
   color: #7180ac;
+  max-width: 75ch;
+  letter-spacing: 0.2px;
 }
 
 @media screen and (max-width: 768px) {
   .container {
     text-align: center;
+    padding-top: 100px;
   }
   .container article {
-    padding: 20px;
+    padding: 25px;
+    font-size: 18px;
+    line-height: 34px;
+   
+  }
+  .kartica{
+    width: 70%;
+  }
+  .kartica h2{
+    font-size: 30px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .imagediv {
     display: block;
+    overflow: hidden;
   }
-}
-@media screen and (max-width: 768px) {
   .images {
     width: 350px !important;
     height: 250px !important;
   }
 }
+
 @media screen and (max-width: 360px) {
+  .kartica{
+    width: 90%;
+  }
   .images {
     width: 250px !important;
     height: 150px !important;
+    overflow: hidden !important;
+  }
+  .container article {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+   
   }
 }

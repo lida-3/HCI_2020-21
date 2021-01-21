@@ -27,11 +27,12 @@
   font-family: sans-serif;
   text-align: center; /*triba nac neki font ta ovaj sam jedini cula*/
   letter-spacing: 2px;
+  margin-top: 30px;
 }
 
 .secondary:hover {
   background-color: #cc9ea5;
-  border: none;
+  border-color:  #cc9ea5;
 }
 
 .tertiary {
@@ -40,20 +41,22 @@
   left: 1%;
   margin: 10px;
   border: solid 1px #2e3687;
-  padding: 3px 10px;
+  padding: 10px;
   border-radius: 30px;
   background-color: transparent;
   color: #2e3687;
   font-size: 14px;
   font-family: sans-serif;
-  text-align: center; /*triba nac neki font ta ovaj sam jedini cula*/
+  text-align: center; 
   letter-spacing: 1px;
+  font-weight: 500;
+  
 }
 
 .tertiary:hover {
   background-color: #2e3687;
   color: white;
-  border: none;
+  border-color: #2e3687;
 }
 
 .quaternary {

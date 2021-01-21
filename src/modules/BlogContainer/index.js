@@ -37,7 +37,7 @@ const BlogContainers = () => {
  
     return (
       <section className={styles.container}>
-        <h2 className={styles.naslov}>Pročitajte naše priče i iskustva s prethodnih događaja</h2>
+        <h2 className={styles.naslov}>NAŠE PRIČE</h2>
         <ul className={styles.list}>
           {data.allContentfulBlogPost.nodes.map((node,i) => {
             return (

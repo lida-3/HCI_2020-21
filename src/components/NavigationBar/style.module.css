@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-around;
   background-color: var(--secondary-color);
+ 
 }
 
 .navigationBar li {
@@ -17,14 +18,14 @@
   color: #7180ac;
 }
 .navigationBar li:hover {
-  border-bottom: 2px solid #d7def3;
+  border-bottom: 2px solid #c4c7cf;
   cursor: pointer;
 }
 
 .navigationBar .active,
 .navigationBar .active:hover {
   border-bottom: 2px solid #7180ac;
-  color: #2e3687;
+  color: #2e3585;
 }
 
 .razmak {

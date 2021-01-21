@@ -18,6 +18,7 @@ return (
      <div> 
        <Img fluid={data.autizam.childImageSharp.fluid} />
      </div>
+     
    )
 }
  

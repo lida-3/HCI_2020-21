@@ -11,7 +11,9 @@ const Homepage =() =>(
             <div className={styles.introdiv}>
                 <h1 className={styles.headings}>HUMAN SAPIENS</h1>
                 <p className={styles.paragraphs}>
-                    Dobrodošli na stranicu za humanitarne događaje i donacije! <br />
+                    Dobrodošli na stranicu za humanitarne događaje i donacije! 
+                    </p>
+                <p className={styles.paragraphs}>
                     Želiš pomoći i činiti dobra djela, ali ne znaš gdje i kako početi? Na pravom si mjestu!
                 </p>
                 <div className={styles.buttonContainer}>
@@ -24,7 +26,7 @@ const Homepage =() =>(
            
             <Carousel>
                 <Carousel.Item interval={2000}>
-                 <Link to = "/dogadaji"><img className={styles.img} src="https://www.dinamikom.eu/images/blog/700-800/736/CL_Down-sindrom_naslovna.jpg"
+                 <Link to = "/dogadaji"><img className={styles.img}  src={require('../../images/down2.jpg')}
         alt="downsindrom"
         /></Link>
             <Carousel.Caption className={styles.events}>
@@ -35,7 +37,7 @@ const Homepage =() =>(
             <Carousel.Item interval={2000}>
                  <Link to = "/dogadaji"><img
                 className={styles.img}
-                    src={require('../../images/WorldRun.jpg')} 
+                    src={require('../../images/WorldRun2.jpg')} 
                     alt="72sata"
                 /></Link>
             <Carousel.Caption className={styles.events}>

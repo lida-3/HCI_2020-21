@@ -79,11 +79,11 @@ const Kontakt =() =>{
                 <div className={styles.forma}>
                 <div  className="form-group">
                     <label htmlFor="username" className={styles.formlog}>Ime i prezime</label>
-                    <input type="username" className="form-control" placeholder="Unesite ime i prezime"/>
+                    <input type="username" className="form-control" placeholder="Ime Prezime"/>
                 </div>
                 <div  className="form-group">
                     <label htmlFor="tel" className={styles.formlog}>Broj telefona</label>
-                    <input type="tel" className="form-control" placeholder="Unesite broj"/>
+                    <input type="tel" className="form-control" placeholder="Broj"/>
                 </div>
                 <div className="form-group">
                     <p>Poruka</p>

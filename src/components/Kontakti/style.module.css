@@ -1,6 +1,6 @@
 .full{
     display: flex;
-    min-height: 600px;
+    min-height: 1000px;
     background-color: #e4e8f4;
     color: #2e3687;
     font-size: 18px;
@@ -44,7 +44,9 @@
     color: #2e3687;
      font-size: 18px;
  }
-
+.forma textarea{
+    padding: 10px;
+}
 .odabir{
     color: #2e3687;
     border-color:#2e3687;

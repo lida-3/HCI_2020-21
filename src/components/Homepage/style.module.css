@@ -9,7 +9,7 @@
 .introdiv {
   background-color: #7180ac;
   color: #efe5e7;
-  text-align: center;
+  text-align: left;
   border-radius: 4px;
   padding: 20px 25px;
   width: 400px;
@@ -37,8 +37,9 @@
   font-size: 16px;
   line-height: 2rem;
   margin: auto 10px;
-  letter-spacing: 1px;
-  text-align: justify;
+  text-align: left;
+  margin-bottom: 12px;
+  
 }
 .carouseldiv {
   overflow: hidden;
@@ -46,21 +47,25 @@
   margin-right: 10%;
   z-index: 1;
   width: 720px;
+  min-height: 470px;
+  
+ 
 }
 
 .headingsCarousel {
   color: #2e3687;
   text-align: center;
-  font-weight: 200;
+  font-weight: 350;
 }
 .date {
-  color: #7f84bb;
+  color: #2e3687;
 }
 .img {
   display: block;
   justify-content: center;
   width: 100%;
   height: 470px;
+  overflow: hidden;
 }
 
 .events {
@@ -182,6 +187,7 @@
     display: none;
   }
 }
+
 @media screen and (max-width: 768px) {
   .introdiv {
     /*
