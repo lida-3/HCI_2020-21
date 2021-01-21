@@ -3,7 +3,6 @@
   display: flex;
   justify-content: space-around;
   background-color: var(--secondary-color);
- 
 }
 
 .navigationBar li {
@@ -15,6 +14,7 @@
   letter-spacing: 2px; /* ovo isto vjv nije dobro ovako rucno postavljat*/
   line-height: 22px;
   text-transform: uppercase;
+  white-space: nowrap;
   color: #7180ac;
 }
 .navigationBar li:hover {
@@ -32,8 +32,17 @@
   padding: 13.5px 40px;
 } /* bez ovoga prijavi se bude u gornjem desnom kutu*/
 
-.modalpg{
+.modalpg {
   color: #2e3687;
+}
+
+@media screen and (max-width: 1175px) {
+  .navigationBar li {
+    padding: 30px 7px;
+  }
+  .razmak {
+    padding: 13.5px 15px;
+  }
 }
 
 @media screen and (max-width: 768px) {

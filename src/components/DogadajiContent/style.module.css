@@ -27,12 +27,14 @@
   margin: 50px 10px 0px 30px;
   width: 600px;
   height: 135px;
+
   box-sizing: border-box;
   background-color: transparent;
 }
 
 .cardMedia {
-  border-radius: 2px;
+  border-radius: 5px;
+  overflow: hidden;
   /*border: 1px solid #7180ac;*/
   box-shadow: 0 5px 10px #7180ac;
   background-color: white;
@@ -41,10 +43,11 @@
   width: 100%;
 }
 
-.cardMedia:hover {
+/*.cardMedia:hover {
   box-shadow: 0 7px 14px #7180ac;
   transform: scale(1.1);
-}
+  transition: all 0.3s ease-in-out;
+}*/
 
 .cardMediaBody {
   background-color: transparent;
@@ -53,7 +56,6 @@
   padding: 12px 15px;
   position: relative;
   width: 60%;
-  
 }
 
 .cardMediaBodyHeading {
@@ -96,7 +98,7 @@
   background-color: #efe5e7;
   margin-top: 0px;
   min-height: 1000px;
-  padding: 120px 0px 60px 40px;
+  padding: 135px 6% 60px;
 }
 
 .overlay {
@@ -127,7 +129,7 @@
 
     align-items: center;
     position: relative;
-    margin: 20px 30px 30px 10px;
+    margin: 0px 30px 30px 10px;
     width: 100%;
     height: 100px;
   }
@@ -138,9 +140,13 @@
     flex-basis: 100%;
   }
 
+  .CustomInput {
+    margin-left: 100px;
+  }
+
   .filter {
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
   }
 
   .buttonContainer {
@@ -148,7 +154,15 @@
     grid-template-columns: 80px 80px 80px;
     grid-template-rows: 30px 30px 30px;
     row-gap: 0px;
-    margin-left: 0px;
+    margin-left: 10px;
+  }
+  .cardMediaBody {
+    background-color: transparent;
+    float: left;
+    height: 100%;
+    padding: 5px 10px;
+    position: relative;
+    width: 60%;
   }
 
   .subtle {
@@ -156,14 +170,21 @@
   }
 
   .cardMediaBodyHeading {
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     font-size: 12px;
     font-weight: 500;
     margin-top: auto;
   }
+  .cardMediaBodyBottom {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    padding: 0 10px;
+    width: 100%;
+  }
 
   .overlay {
-    padding: 18px;
+    padding: 12px;
     line-height: 0.8;
     text-align: justify;
   }
@@ -173,7 +194,9 @@
   }
 
   .textfield {
-    margin: 10px 0px 20px 5px;
-    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 20px 20px 20px;
+    width: 50%;
   }
 }

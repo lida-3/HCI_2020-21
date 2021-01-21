@@ -10,8 +10,21 @@
   font-family: sans-serif;
   text-align: center; /*triba nac neki font ta ovaj sam jedini cula*/
 }
+.doniraj {
+  display: inline-block;
+  margin: 10px;
+  border: none;
+  padding: 7px 20px;
+  border-radius: 30px;
+  background-color: #cc9ea5;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: sans-serif;
+  text-align: center;
+}
 
-.primary:hover {
+.primary:hover,
+.doniraj:hover {
   background-color: #7180ac;
 }
 
@@ -32,7 +45,7 @@
 
 .secondary:hover {
   background-color: #cc9ea5;
-  border-color:  #cc9ea5;
+  border-color: #cc9ea5;
 }
 
 .tertiary {
@@ -47,10 +60,9 @@
   color: #2e3687;
   font-size: 14px;
   font-family: sans-serif;
-  text-align: center; 
+  text-align: center;
   letter-spacing: 1px;
   font-weight: 500;
-  
 }
 
 .tertiary:hover {

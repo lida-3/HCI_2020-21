@@ -72,7 +72,7 @@ const toggle7 = () => setModal7(!modal7);
               <div className={styles.cardMediaHeading}>SUZAH</div>
               <div className={styles.subtitle}>Savez udruga za autizam</div>
               <div className={styles.buttonContainer}>
-                <button className={buttonStyles.primary} onClick={toggle}>Doniraj</button>
+                <button className={buttonStyles.doniraj} onClick={toggle}>Doniraj</button>
               </div>
             </div>
             <Modal isOpen={modal} toggle={toggle} className={styles.modalic}>
@@ -99,7 +99,7 @@ const toggle7 = () => setModal7(!modal7);
               <div className={styles.cardMediaHeading}>Beštie</div>
               <div className={styles.subtitle}>Zaklada za zaštitu životinja</div>
               <div className={styles.buttonContainer}>
-                <button className={buttonStyles.primary} onClick={toggle1}>Doniraj</button>
+                <button className={buttonStyles.doniraj} onClick={toggle1}>Doniraj</button>
               </div>
           </div>
           <Modal isOpen={modal1} toggle={toggle1} className={styles.modalic}>
@@ -125,7 +125,7 @@ const toggle7 = () => setModal7(!modal7);
               <div className={styles.cardMediaHeading}>Crveni križ</div>
               <div className={styles.subtitle}>Humanitarno društvo</div>
               <div className={styles.buttonContainer}>
-                <button className={buttonStyles.primary} onClick={toggle2}>Doniraj</button>
+                <button className={buttonStyles.doniraj} onClick={toggle2}>Doniraj</button>
                 
               </div>
           </div>
@@ -152,7 +152,7 @@ const toggle7 = () => setModal7(!modal7);
               <div className={styles.cardMediaHeading}>Palčići</div>
               <div className={styles.subtitle}>Klub roditelja nedonoščadi</div>
               <div className={styles.buttonContainer}>
-                <button className={buttonStyles.primary} onClick={toggle3}>Doniraj</button>
+                <button className={buttonStyles.doniraj} onClick={toggle3}>Doniraj</button>
               </div>
           </div>
           <Modal isOpen={modal3} toggle={toggle3} className={styles.modalic}>
@@ -178,7 +178,7 @@ const toggle7 = () => setModal7(!modal7);
               <div className={styles.cardMediaHeading}>Brački pupoljci</div>
               <div className={styles.subtitle}>Udruga za djecu s teškoćama u razvoju</div>
               <div className={styles.buttonContainer}>
-                <button className={buttonStyles.primary} onClick={toggle4}>Doniraj</button>
+                <button className={buttonStyles.doniraj} onClick={toggle4}>Doniraj</button>
               </div>
           </div>
           <Modal isOpen={modal4} toggle={toggle4} className={styles.modalic}>
@@ -204,7 +204,7 @@ const toggle7 = () => setModal7(!modal7);
               <div className={styles.cardMediaHeading}>Krijesnica</div>
               <div className={styles.subtitle}>Udruga za pomoć djeci s malignim bolestima</div>
               <div className={styles.buttonContainer}>
-                <button className={buttonStyles.primary} onClick={toggle5}>Doniraj</button>
+                <button className={buttonStyles.doniraj} onClick={toggle5}>Doniraj</button>
               </div>
           </div>
           <Modal isOpen={modal5} toggle={toggle5} className={styles.modalic}>
@@ -230,7 +230,7 @@ const toggle7 = () => setModal7(!modal7);
               <div className={styles.cardMediaHeading}>moST</div>
               <div className={styles.subtitle}>Centar za beskućnike i smanjenje siromaštva</div>
               <div className={styles.buttonContainer}>
-                <button className={buttonStyles.primary} onClick={toggle6}>Doniraj</button>
+                <button className={buttonStyles.doniraj} onClick={toggle6}>Doniraj</button>
               </div>
           </div>
           <Modal isOpen={modal6} toggle={toggle6} className={styles.modalic}>
@@ -256,7 +256,7 @@ const toggle7 = () => setModal7(!modal7);
               <div className={styles.cardMediaHeading}>Maestral</div>
               <div className={styles.subtitle}>Dom za djecu bez odgovarajuće roditeljske skrbi</div>
               <div className={styles.buttonContainer}>
-                <button className={buttonStyles.primary} onClick={toggle7}>Doniraj</button>
+                <button className={buttonStyles.doniraj} onClick={toggle7}>Doniraj</button>
               </div>
           </div>
           <Modal isOpen={modal7} toggle={toggle7} className={styles.modalic}>

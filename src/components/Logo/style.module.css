@@ -10,6 +10,15 @@
 .logoImg {
   width: 60px;
 }
+@media screen and (max-width: 1175px) {
+  .logoImg {
+    width: 45px;
+  }
+  .logo {
+    margin: 15px;
+    margin-top: 25px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .logoImg {

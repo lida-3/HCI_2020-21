@@ -18,7 +18,7 @@
   margin-bottom: 50px;
   margin-right: -25px;
   z-index: 2;
-  height: 350px;
+  height: 95%;
   box-shadow: 0 5px 10px #7180ac;
 }
 
@@ -39,7 +39,6 @@
   margin: auto 10px;
   text-align: left;
   margin-bottom: 12px;
-  
 }
 .carouseldiv {
   overflow: hidden;
@@ -48,8 +47,6 @@
   z-index: 1;
   width: 720px;
   min-height: 470px;
-  
- 
 }
 
 .headingsCarousel {
@@ -64,7 +61,7 @@
   display: block;
   justify-content: center;
   width: 100%;
-  height: 470px;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -103,6 +100,7 @@
 .icon:hover,
 .icon2:hover {
   transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 }
 
 .buttonContainertwo {
@@ -149,6 +147,12 @@
   text-align: left;
   color: #cc9ea5;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1175px) {
+  .carouseldiv {
+    margin-top: 100px;
+  }
 }
 
 /*responzivnost*/

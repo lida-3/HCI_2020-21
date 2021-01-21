@@ -1,5 +1,8 @@
 import React, { memo} from 'react'
 import TextField from "@material-ui/core/TextField"
+import IconButton from "@material-ui/core/IconButton";
+import InputAdornment from "@material-ui/core/InputAdornment";
+import SearchIcon from "@material-ui/icons/Search";
 import eventsList from "../../data/dogadaji.json"
 import ButtonToggle from '@material-ui/lab/ToggleButton'
 import { makeStyles } from "@material-ui/core";
@@ -121,6 +124,14 @@ const DogadajiContent = memo(({ fetchData }) => {
           id="item-search"
           label="Pretraživanje"
           variant="standard"
+          InputProps={{
+          endAdornment: (
+            <InputAdornment>
+              <IconButton>
+                <SearchIcon  className={styles.CustomInput}>search</SearchIcon>
+              </IconButton>
+            </InputAdornment>
+          )    }}
       
           value={searchText}
           size="small"

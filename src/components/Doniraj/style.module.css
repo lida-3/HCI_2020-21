@@ -1,33 +1,32 @@
 .background {
-  padding: 120px 0px 60px 40px;
+  padding: 120px 40px 60px 40px;
   background-color: rgba(239, 229, 231, 0.4);
   min-height: 600px;
 }
 
 .cardsContainer {
   display: grid;
-  grid-column-gap: 15px;
-  grid-row-gap: 80px;
-  margin-top: 40px;
+  grid-column-gap: 40px;
+  grid-row-gap: 50px;
+  margin: 5% 10% 0% 10%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  padding: 0px 0 65px 0;
   justify-items: center;
   align-items: center;
 }
 
 .cards {
-  height: 450px;
-  width: 210px;
-  border-radius: 2px;
+  height: 88%;
+  width: 90%;
+  border-radius: 5px 5px;
+  overflow: hidden;
   box-shadow: 0 5px 10px #7180ac;
   background-color: white;
-  margin: 40px 50px 20px 20px;
-  
 }
 
 .cards:hover {
   box-shadow: 0 7px 14px #7180ac;
+  transition: all 0.3s ease-in-out;
   transform: scale(1.1);
 }
 
@@ -48,22 +47,22 @@
   display: block;
   letter-spacing: 1px;
   color: #2e3687;
-  font-size: 16;
+  font-size: 18;
   font-weight: 500;
-  margin-top: 90px;
-  margin-bottom: 10px;
+  margin-top: 42%;
+  margin-bottom: 5%;
 }
 
 .subtitle {
   color: #7180ac;
-  font-size: 14px;
+  font-size: 16x;
   margin-bottom: 10px;
 }
 
 .buttonContainer {
   display: flex;
   justify-content: space-evenly;
-  margin: 20px 0px;
+  margin: 35px 0px 20px 0px;
 }
 
 .modalic {
@@ -87,6 +86,15 @@
   width: 70%;
   color: #2e3687;
   border: 1px solid #7180ac;
+}
+
+@media screen and (min-width: 1920px) {
+  .cardsContainer {
+    margin: 5% 15% 0% 15%;
+  }
+  .cardMediaHeading {
+    margin-top: 45%;
+  }
 }
 
 @media screen and (max-width: 1175px) {
@@ -126,25 +134,24 @@
   }
 
   .cards {
-    height: 280px;
-    width: 120px;
-    border-radius: 2px;
     box-shadow: 0 5px 10px #7180ac;
     background-color: white;
-    margin-right: 20px;
   }
 
   .cardMediaHeading {
-    font-size: 12px;
-    margin-top: 40px;
-    margin-bottom: 10px;
+    margin-top: 60%;
+    margin-bottom: 5%;
   }
+}
 
-  .buttonContainer {
-    margin: 10px 0px;
+@media screen and (max-width: 420px) {
+  .cardsContainer {
+    margin-top: 5px;
+    grid-template-columns: 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
   }
-
-  .subtitle {
-    font-size: 10px;
+  .cards {
+    margin-bottom: 5px;
   }
 }
